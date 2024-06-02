@@ -1,0 +1,109 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.sales {
+  min-height: 100vh;
+}
+
+.sales__container {
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.sales__informationBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+}
+
+.sales__descriptionBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(16px);
+}
+
+.sales__decoration {
+  display: block;
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background: $primary-dark-red;
+}
+
+.sales__subTitle {
+  color: $primary-dark-red;
+  font-size: $primary-base;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.salesBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(87px);
+}
+
+.sales__titlesBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sales__title {
+  color: $primary-black;
+  font-size: $primary-first;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.discountTime__block {
+  display: flex;
+  gap: rem(24px);
+}
+
+.time__capture {
+  display: flex;
+  flex-direction: column;
+  gap: rem(6px);
+  color: $primary-black;
+  font-size: $primary-four;
+  font-weight: 700;
+  line-height: 0.9375;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+.time__capture:not(:last-child)::after {
+  content: ':';
+  color: $primary-light-red;
+  position: absolute;
+  left: 110%;
+  top: 28%;
+}
+
+.time__label {
+  font-weight: 500;
+  color: $primary-black;
+  font-size: $primary-two;
+}
+
+.slider__buttons {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+.next__button,
+.prev__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $primary-input-background;
+}
