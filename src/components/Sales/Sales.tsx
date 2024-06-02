@@ -5,6 +5,7 @@ import styles from './SalesStyles.module.scss';
 import dynamic from 'next/dynamic';
 import { useCountdownTimer } from '@/hooks/useCountdownTimer';
 import { FormNext, FormPrevious } from 'grommet-icons';
+import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
 
 const Sales: FC = () => {
   const endDate = new Date('2024-06-10T00:00:00Z');
@@ -14,10 +15,7 @@ const Sales: FC = () => {
     <section className={styles.sales}>
       <div className={styles.sales__container}>
         <div className={styles.sales__informationBlock}>
-          <div className={styles.sales__descriptionBlock}>
-            <span className={styles.sales__decoration}></span>
-            <h4 className={styles.sales__subTitle}>Today’s</h4>
-          </div>
+          <TitleBlock title='Today’s' />
           <div className={styles.sales__titlesBlock}>
             <div className={styles.salesBlock}>
               <h2 className={styles.sales__title}>Flash Sales</h2>

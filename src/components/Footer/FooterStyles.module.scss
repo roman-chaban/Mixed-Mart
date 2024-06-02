@@ -85,8 +85,33 @@
 
 .menuList__link {
   color: $primary-light-white;
-  font-size: $primary-base;
+  font-size: 16px;
   line-height: 1.5;
+  position: relative;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+.menuList__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-radius: rem(10px);
+  background: $primary-light-white;
+  opacity: 0;
+  transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menuList__link:hover::before {
+  opacity: 1;
+  width: 100%;
+}
+
+.send__icon {
+  cursor: pointer;
 }
 
 .linksBlock {

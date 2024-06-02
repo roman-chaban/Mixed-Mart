@@ -34,6 +34,7 @@ export const Footer: FC = () => {
                 alt='telegram icon'
                 width={22}
                 height={20}
+                className={styles.send__icon}
               />
             </label>
           </div>
