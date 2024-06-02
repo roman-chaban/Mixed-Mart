@@ -1,0 +1,30 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.sideBar__container {
+   padding-left: 100px;
+   height: 344px;
+}
+
+.menu {
+  max-width: rem(220px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  padding-right: rem(16px);
+  border-right: 1.5px solid $primary-light-black;
+}
+
+.menu__listItem > .menu__listLink {
+  color: $primary-black;
+  font-size: $primary-base;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+.menu:first-child {
+   padding-top: 40px;
+}

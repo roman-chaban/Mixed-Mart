@@ -1,1 +1,14 @@
 @import './reset.scss';
+@import './colors.scss';
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $primary-light-white !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: $primary-light-white !important;
+  border: 1.5px solid $primary-light-black !important;
+}

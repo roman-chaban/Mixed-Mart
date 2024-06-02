@@ -37,8 +37,14 @@ export const Header: FC = () => {
             />
             <Search color='black' style={{ width: 20, height: 20 }} />
           </label>
-          <Favorite className={styles.icon} color='black' />
-          <Basket className={styles.icon} color='black' />
+          <div className={styles.favorite__block}>
+            <Favorite className={styles.icon} color='black' />
+            <span className={styles.icon__counter}>0</span>
+          </div>
+          <div className={styles.basket__block}>
+            <Basket className={styles.icon} color='black' />
+            <span className={styles.icon__counter}>0</span>
+          </div>
         </nav>
       </div>
     </header>

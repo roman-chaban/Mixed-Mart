@@ -91,13 +91,38 @@
   opacity: 0.5;
 }
 
-.icon {
-  cursor: pointer;
+.favorite__block,
+.basket__block {
+  position: relative;
+
+  .icon {
+    position: relative;
+    z-index: 1;
+  }
+
+  .icon__counter,
+  .basket__counter {
+    position: absolute;
+    font-size: 10px;
+    padding-top: 1px;
+    top: -4.5px;
+    left: 95%;
+    font-weight: 500;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-light-white;
+    width: 16px;
+    height: 16px;
+    background: $primary-black;
+    border-radius: 50%;
+    z-index: 2;
+  }
 }
 
-
 @media screen and (max-width: 1100px) {
-    .logoTitle {
-      font-size: 1.4rem;
-    }
+  .logoTitle {
+    font-size: 1.4rem;
+  }
 }
