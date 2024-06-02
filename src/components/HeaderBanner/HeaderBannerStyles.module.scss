@@ -1,0 +1,29 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+
+.headerBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: $primary-black;
+}
+
+.topTitle {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+  color: $primary-light-white;
+  font-size: $primary;
+  line-height: 1.5;
+}
+
+.link {
+  color: $primary-light-white;
+  font-size: $primary;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+  line-height: 1.7;
+}
