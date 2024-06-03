@@ -6,7 +6,7 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   {
     label: 'Home',
-    href: '/Home',
+    href: '/',
   },
   {
     label: 'Contact',
@@ -18,6 +18,6 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'Sign Up',
-    href: '/Sign Up',
+    href: '/SignUp',
   },
 ];

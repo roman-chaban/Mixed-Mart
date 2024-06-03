@@ -1,0 +1,114 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.signUp__container {
+  @include mainContainer;
+  padding: 40px 100px;
+  padding-top: 20px;
+}
+
+.signUp__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signUp__image {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.signUpForm__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
+
+.signUp__registrationBlock {
+  padding-top: 80px;
+}
+
+.create__title {
+  color: $primary-black;
+  font-size: $primary-first;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.create__subTitle {
+  color: $primary-black;
+  font-size: $primary-base;
+  line-height: 1.5;
+}
+
+.signUp__registrationItems {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+}
+
+.signUp__form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
+
+.signUp__input {
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid $primary-gray;
+}
+
+.formButtons__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.submitButton {
+  font-size: $primary-base;
+  color: $primary-light-white;
+  background: $primary-dark-red;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 16px 122px;
+}
+
+.signUpButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(5px);
+  border: 1px solid $primary-light-black;
+  padding: 16px 0;
+  background: transparent;
+  border-radius: 4px;
+  width: 355px;
+}
+
+.formButtonBlock__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(16px);
+}
+
+.already__title {
+  font-size: $primary-base;
+  line-height: 1.5;
+  color: $primary-black;
+  opacity: 0.7;
+}
+
+.logIn__link {
+  font-size: $primary-base;
+  line-height: 1.5;
+  color: $primary-black;
+  opacity: 0.7;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid $primary-black;
+}

@@ -6,3 +6,24 @@
 .arrival {
   min-height: 100vh;
 }
+
+.arrival__container {
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.arrivalTitle__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.arrival__title {
+  font-size: $primary-first;
+  color: $primary-black;
+  font-weight: 600;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
