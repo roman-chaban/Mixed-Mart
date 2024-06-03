@@ -1,0 +1,55 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.services {
+  display: flex;
+}
+
+.services__container {
+  @include mainContainer;
+  padding: 100px;
+}
+
+.services__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(8px);
+}
+
+.servicesImage__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 58px;
+  background: $primary-gray;
+  border-radius: 100%;
+  margin-bottom: 16px;
+}
+
+.servicesItem__image {
+  background: $primary-black;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.servicesItem__title {
+  font-size: $primary-five;
+  color: $primary-black;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.servicesItem__subTitle {
+  line-height: 1.4;
+  font-size: $primary;
+}
