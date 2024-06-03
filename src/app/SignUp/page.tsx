@@ -16,7 +16,7 @@ interface SignUpProps {
 }
 
 export default function SignUp() {
-  useChangePageTitle('Tech Wave | SignUp');
+  useChangePageTitle('Mixed Mart | SignUp');
 
   const [formValues, setFormValues] = useState<SignUpProps>({
     name: '',

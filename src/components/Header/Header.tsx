@@ -6,7 +6,7 @@ import { HeaderBanner } from '../HeaderBanner/HeaderBanner';
 import { NavBarItems } from '../NavBarItems/NavBarItems';
 import { NavItem, navItems } from '@/common/navItems/navItems';
 import { Input } from '../ui/Input/Input';
-import { Basket, Favorite, Search, Shop } from 'grommet-icons';
+import { Basket, Favorite, Search } from 'grommet-icons';
 import { SearchValue } from '@/types/types';
 
 export const Header: FC = () => {
@@ -16,8 +16,7 @@ export const Header: FC = () => {
       <HeaderBanner />
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <h3 className={styles.logoTitle}>Tech Wave</h3>
-          <Shop color='black' />
+          <h3 className={styles.logoTitle}>Mixed Mart</h3>
         </div>
         <nav className={styles.header__nav}>
           <ul className={styles.nav__menu}>

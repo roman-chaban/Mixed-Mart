@@ -10,10 +10,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Tech Wave | Home',
+  title: 'Mixed Mart | Home',
   description:
-    "Discover the future of technology at Tech Wave, your one-stop online shop for all things tech. We offer a wide range of cutting-edge gadgets, high-performance electronics, and innovative accessories to meet all your digital needs. Whether you're a tech enthusiast, a gamer, or simply looking to upgrade your home or office, Tech Wave has something for everyone.",
-  icons: './favicon/favicon.svg',
+    'Mixed Merchandise Mart is a dynamic retail store offering a diverse range of products to meet the needs of all shoppers. From everyday essentials to unique specialty items, our selection includes home goods, electronics, clothing, beauty products, toys, and much more. Located in a convenient and accessible area, Mixed Merchandise Mart provides .',
 };
 
 export default function RootLayout({
