@@ -18,6 +18,6 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'Sign Up',
-    href: '/SignUp',
+    href: '/auth/SignUp',
   },
 ];

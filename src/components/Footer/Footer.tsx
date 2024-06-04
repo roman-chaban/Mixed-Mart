@@ -30,7 +30,7 @@ export const Footer: FC = () => {
                 setValue={(event) => setEmail(event.target.value)}
               />
               <Image
-                src='./images/footer/telegram-icon.svg'
+                src='/images/footer/telegram-icon.svg'
                 alt='telegram icon'
                 width={22}
                 height={20}
