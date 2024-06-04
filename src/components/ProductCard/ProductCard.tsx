@@ -6,6 +6,7 @@ import type { FC } from 'react';
 import Image from 'next/image';
 import { Star } from 'grommet-icons';
 import { Button } from '../ui/Button/Button';
+import Link from 'next/link';
 
 interface ProductCardProps {
   product: TypeUltimateProducts;
@@ -43,7 +44,15 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
           ProductId: {product.productId}
         </span>
         <Button type='button' className={styles.productCard__button}>
-          View product
+          <Link
+            className={styles.productCard__link}
+            href={`/computers/${product.productTitle.replaceAll(
+              ' ',
+              '-'
+            )}`}
+          >
+            View product
+          </Link>
         </Button>
       </div>
     </div>

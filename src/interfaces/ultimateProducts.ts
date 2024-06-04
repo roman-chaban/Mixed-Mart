@@ -14,7 +14,7 @@ export type TypeProductImages = ProductImages<
   string
 >[];
 
-export type TypeUltimateProducts = UltimateProducts;
+export type TypeUltimateProducts = UltimateProducts[];
 
 export interface UltimateProducts {
   productTitle: string;
@@ -23,7 +23,6 @@ export interface UltimateProducts {
   productPrice: string;
   productId: number;
   productImage: string;
+  productCategory: string;
   productImages: TypeProductImages;
 }
-
-

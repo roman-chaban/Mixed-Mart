@@ -1,0 +1,65 @@
+@import './colors.scss';
+@import './globals.scss';
+@import './functions.scss';
+@import './mixins.scss';
+
+.notFound {
+  display: flex;
+}
+
+.notFound__container {
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: rem(100px);
+}
+
+.redirect__link {
+  color: $primary-black;
+  opacity: 0.5;
+}
+
+.notFound__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40px);
+}
+
+.notFound__title {
+  text-align: center;
+  font-size: $primary-six;
+  color: $primary-black;
+  font-weight: 500;
+  line-height: 1.04545;
+  letter-spacing: 0.03em;
+}
+
+.notFound__subTitle {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.notFound__link {
+  color: $primary-black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.notFound__button {
+  font-size: $primary-base;
+  background: $primary-dark-red;
+  border-radius: rem(4px);
+  max-width: 254px;
+  padding: 16px 48px;
+}
+
+.notFound__buttonLink {
+  color: $primary-light-white;
+  font-weight: 500;
+  line-height: 1.5;
+}

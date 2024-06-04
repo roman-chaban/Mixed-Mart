@@ -1,0 +1,11 @@
+@import '../../assets/mixins.scss';
+
+.product {
+  min-height: 100vh;
+}
+
+.product__container {
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+}

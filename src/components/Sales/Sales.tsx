@@ -16,8 +16,6 @@ import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
-import SwiperCore from 'swiper';
-import { Navigation } from 'swiper/modules';
 
 const Sales: FC = () => {
   const swiperRef = useRef<any>(null);
@@ -108,7 +106,7 @@ const Sales: FC = () => {
           loop={false}
           allowSlideNext={!isNextDisabled}
           allowSlidePrev={!isPrevDisabled}
-          style={{ cursor: 'grab', width: '100%', maxWidth: '1440px' }}
+          style={{ cursor: 'grab' }}
           onSlideChange={updateNavigationButtons}
         >
           <div className={styles.productCards}>
