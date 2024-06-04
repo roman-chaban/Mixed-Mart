@@ -10,7 +10,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'Contact',
-    href: '/Contact',
+    href: '/contact',
   },
   {
     label: 'About',

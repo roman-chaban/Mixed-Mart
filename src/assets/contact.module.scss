@@ -1,0 +1,94 @@
+@import './colors.scss';
+@import './globals.scss';
+@import './mixins.scss';
+
+.contact {
+  min-height: 100vh;
+}
+
+.contact__container {
+  @include mainContainer;
+  padding-left: rem(100px);
+  padding-right: rem(100px);
+  padding-bottom: rem(140px);
+}
+
+.contact__block {
+  padding-top: rem(80px);
+  padding-bottom: rem(80px);
+}
+
+.contact__link {
+  color: $primary-black;
+  opacity: 0.5;
+  line-height: 1.5;
+}
+
+.contact__informationBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  padding: 25px 40px;
+  padding-bottom: rem(51px);
+  border-radius: 4px;
+  width: 340px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background: $primary-light-white;
+}
+
+.callToUs__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  padding-bottom: rem(32px);
+  border-bottom: 1.5px solid $primary-light-black;
+}
+
+.writeToUs__block {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  padding-bottom: rem(32px);
+}
+.callToUs__titles,
+.writeToUs__titles {
+  display: flex;
+  align-items: center;
+  gap: rem(16px);
+}
+
+.callToUs__title,
+.writeToUs__title {
+  font-weight: 500;
+  color: $primary-black;
+  line-height: 1.5;
+}
+
+.callToUs__bgIcon,
+.writeToUs__bgIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary-dark-red;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.callToUs__address,
+.writeToUs__address {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.address,
+.phone,
+.email {
+  font-size: $primary;
+  color: $primary-black;
+  line-height: 1.5;
+  font-weight: 500;
+  font-style: normal;
+}
