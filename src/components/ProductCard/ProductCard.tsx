@@ -16,6 +16,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
     <div className={styles.productCard}>
       <div className={styles.productCard__container}>
         <Image
+          priority
           src={product.productImage}
           alt={`Product Image ${product.productTitle}`}
           width={200}

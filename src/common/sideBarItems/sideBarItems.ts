@@ -5,8 +5,8 @@ export interface SideBarItem {
 
 export const sideBarItems: SideBarItem[] = [
   {
-    label: 'Woman’s Fashion',
-    href: '/Woman’s Fashion',
+    label: 'Computers',
+    href: '/computers',
   },
   {
     label: 'Men’s Fashion',
