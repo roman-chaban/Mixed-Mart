@@ -1,6 +1,9 @@
 'use client';
 
-import { TypeUltimateProducts } from '@/interfaces/ultimateProducts';
+import {
+  TypeUltimateProducts,
+  UltimateProducts,
+} from '@/interfaces/ultimateProducts';
 import styles from './ProductCardStyles.module.scss';
 import type { FC } from 'react';
 import Image from 'next/image';
@@ -9,7 +12,7 @@ import { Button } from '../ui/Button/Button';
 import Link from 'next/link';
 
 interface ProductCardProps {
-  product: TypeUltimateProducts;
+  product: UltimateProducts;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
@@ -46,10 +49,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         <Button type='button' className={styles.productCard__button}>
           <Link
             className={styles.productCard__link}
-            href={`/computers/${product.productTitle.replaceAll(
-              ' ',
-              '-'
-            )}`}
+            href={`/computers/${product.productTitle.replaceAll(' ', '-')}`}
           >
             View product
           </Link>
