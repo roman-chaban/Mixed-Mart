@@ -1,24 +1,25 @@
-import computers from '@/api/ultimateProducts/ultimateProducts.json';
+'use client';
+import styles from '@/app/computers/ComputersStyles.module.scss';
 import { Product } from '@/components/Product/Product';
+import computers from '@/api/ultimateProducts/ultimateProducts.json';
 
 interface ComputerProps {
-  params: { title: string };
+  params: { productTitle: string };
 }
 
-export async function generateMetadata({ params: { title } }: ComputerProps) {
-  return {
-    title: title,
-  };
-}
+export default function Computer({ params }: ComputerProps) {
+  const productTitle = params?.productTitle || '';
 
-export default function Computer({ params: { title } }: ComputerProps) {
   const filteredComputers = computers.filter(
-    (computer) => computer.productTitle === title
+    (product) =>
+      product &&
+      product.productTitle &&
+      product.productTitle.toLowerCase() === productTitle.toLowerCase()
   );
 
   return (
-    <div>
-      <Product products={filteredComputers} />
-    </div>
+    <section className={styles.computer}>
+        {filteredComputers && <Product product={filteredComputers} />}
+    </section>
   );
 }

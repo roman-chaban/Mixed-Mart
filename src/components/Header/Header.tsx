@@ -8,8 +8,10 @@ import { NavItem, navItems } from '@/common/navItems/navItems';
 import { Input } from '../ui/Input/Input';
 import { Basket, Favorite, Search } from 'grommet-icons';
 import { SearchValue } from '@/types/types';
+import { usePathname } from 'next/navigation';
 
 export const Header: FC = () => {
+  const pathname = usePathname();
   const [searchValue, setSearchValue] = useState<SearchValue>('');
   return (
     <header className={styles.header}>
@@ -21,7 +23,7 @@ export const Header: FC = () => {
         <nav className={styles.header__nav}>
           <ul className={styles.nav__menu}>
             {navItems.map((link: NavItem) => (
-              <NavBarItems key={link.href} link={link} />
+              <NavBarItems key={link.href} link={link} active={pathname} />
             ))}
           </ul>
           <label htmlFor='search' className={styles.searchLabel}>

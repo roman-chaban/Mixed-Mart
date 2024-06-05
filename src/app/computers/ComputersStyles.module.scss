@@ -3,6 +3,9 @@
 @import '../../assets/functions.scss';
 @import '../../assets/mixins.scss';
 
+.computer {
+  min-height: 100vh;
+}
 
 .computers {
    display: flex;

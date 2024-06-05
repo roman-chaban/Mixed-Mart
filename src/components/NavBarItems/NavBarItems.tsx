@@ -7,12 +7,20 @@ interface NavBarItemsProps {
     label: string;
     href: string;
   };
+  active: string;
 }
 
-export const NavBarItems: FC<NavBarItemsProps> = ({ link }) => {
+export const NavBarItems: FC<NavBarItemsProps> = ({ link, active }) => {
   return (
     <li className={styles.menu__listItem}>
-      <Link className={styles.menu__listLink} href={link.href}>{link.label}</Link>
+      <Link
+        className={`${styles.menu__listLink} ${
+          link.href === active ? styles.active : ''
+        }`}
+        href={link.href}
+      >
+        {link.label}
+      </Link>
     </li>
   );
 };
