@@ -1,0 +1,65 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32px);
+  width: 100%;
+  max-width: rem(800px);
+  border-radius: rem(4px);
+  box-shadow: $primary-light-shadow;
+  background: $primary-light-white;
+  padding-top: rem(40px);
+  padding-left: rem(31px);
+  padding-right: rem(31px);
+}
+
+.formInputs__block {
+  display: flex;
+  align-items: center;
+  gap: rem(16px);
+}
+
+.formInput {
+  width: 100%;
+  max-width: 250px;
+  padding-top: rem(13px);
+  padding-bottom: rem(13px);
+  padding-left: rem(16px);
+  height: 50px;
+  border-radius: rem(4px);
+  background: $primary-input-background;
+  color: $primary-light-black;
+  line-height: 1.5;
+}
+
+.from__textArea {
+  width: 100%;
+  background: $primary-input-background;
+  color: $primary-light-black;
+  line-height: 1.5;
+  border-radius: rem(4px);
+  height: rem(207px);
+  resize: none;
+  padding-top: rem(13px);
+  padding-left: rem(16px);
+}
+
+.form__sendButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-radius: rem(4px);
+  max-width: rem(235px);
+  padding: 16px 48px;
+  font-size: $primary-base;
+  background: $primary-dark-red;
+  color: $primary-light-white;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-right: 0;
+}

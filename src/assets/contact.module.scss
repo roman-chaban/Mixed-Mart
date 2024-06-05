@@ -13,6 +13,12 @@
   padding-bottom: rem(140px);
 }
 
+.contact__fromContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(30px);
+}
+
 .contact__block {
   padding-top: rem(80px);
   padding-bottom: rem(80px);
@@ -29,9 +35,8 @@
   flex-direction: column;
   gap: rem(32px);
   padding: 25px 40px;
-  padding-bottom: rem(51px);
+  padding-bottom: rem(10px);
   border-radius: 4px;
-  width: 340px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   background: $primary-light-white;

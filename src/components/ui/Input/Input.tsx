@@ -3,7 +3,7 @@ import { ChangeEvent, FC } from 'react';
 interface InputProps {
   placeholder: string;
   type: string;
-  name: string;
+  name?: string;
   className: string;
   id?: string;
   value: string;
