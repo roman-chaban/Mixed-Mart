@@ -22,7 +22,7 @@ const Sales: FC = () => {
   const [isNextDisabled, setIsNextDisabled] = useState(false);
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
   const [products, setProducts] = useState<UltimateProducts[]>(ultimateProducts);
-  const endDate = new Date('2024-06-10T00:00:00Z');
+  const endDate = new Date('2024-06-18T00:00:00Z');
   const timeRemaining = useCountdownTimer(endDate);
 
   const updateNavigationButtons = () => {
