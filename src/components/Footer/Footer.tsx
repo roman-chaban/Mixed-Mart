@@ -21,13 +21,12 @@ export const Footer: FC = () => {
             </span>
             <label htmlFor='email' className={styles.footer__label}>
               <Input
-                id='email'
                 placeholder='Enter your email'
                 className={styles.footer__input}
                 name='email'
                 type='email'
                 value={email}
-                setValue={(event) => setEmail(event.target.value)}
+                onChange={(event) => setEmail(event.target.value)}
               />
               <Image
                 src='/images/footer/telegram-icon.svg'
