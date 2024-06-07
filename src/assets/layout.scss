@@ -1,6 +1,11 @@
 @import './reset.scss';
 @import './colors.scss';
 
+
+.swiper-pagination {
+  margin-top: 20px !important;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: $primary-light-white !important;

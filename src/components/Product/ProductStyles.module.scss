@@ -68,7 +68,7 @@
 .productItem {
   padding-top: rem(80px);
   display: flex;
-  gap: rem(71px);
+  gap: rem(41px);
 }
 
 .product__imagesBlock {
@@ -87,6 +87,7 @@
   object-fit: contain;
   max-width: 300px;
   max-height: 300px;
+  margin-bottom: -100px;
 }
 
 .smallImage {
