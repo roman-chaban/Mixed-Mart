@@ -48,7 +48,7 @@ export const RegistrationForm: FC<RegistrationFormProps> = ({
       <form className={styles.signUp__form}>
         <Input
           name='name'
-          setValue={handleChangeValue}
+          onChange={handleChangeValue}
           placeholder='Name'
           className={styles.signUp__input}
           value={formValues.name}
@@ -56,7 +56,7 @@ export const RegistrationForm: FC<RegistrationFormProps> = ({
         />
         <Input
           name='email'
-          setValue={handleChangeValue}
+          onChange={handleChangeValue}
           placeholder='Email or Phone Number'
           className={styles.signUp__input}
           value={formValues.email}
@@ -64,7 +64,7 @@ export const RegistrationForm: FC<RegistrationFormProps> = ({
         />
         <Input
           name='password'
-          setValue={handleChangeValue}
+          onChange={handleChangeValue}
           placeholder='Password'
           className={styles.signUp__input}
           value={formValues.password}
