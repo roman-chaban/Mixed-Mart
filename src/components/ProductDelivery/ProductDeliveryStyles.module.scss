@@ -1,0 +1,55 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+
+.productDelivery__block {
+  margin-top: rem(40px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 399px;
+  border: 1.5px solid $primary-light-black;
+  border-radius: 4px;
+}
+
+.firstDelivery__block {
+  display: flex;
+  padding: 16px;
+  padding-bottom: rem(30px);
+  gap: rem(16px);
+  border-bottom: 1.5px solid $primary-light-black;
+}
+
+.secondDelivery__block {
+  padding: 16px;
+  display: flex;
+  padding-bottom: rem(30px);
+  gap: rem(16px);
+}
+
+.delivery__titlesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+}
+
+.delivery__title {
+  color: $primary-black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.delivery__subTitle {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: $primary;
+  text-decoration: underline;
+}
+
+.nonDecoration {
+  text-decoration: none;
+}
+
+.delivery__markedUnderline {
+  text-decoration: underline;
+}

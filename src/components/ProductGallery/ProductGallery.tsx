@@ -1,79 +1,47 @@
 'use client';
 
-import type { FC } from 'react';
-import Image from 'next/image';
-import styles from '@/components/Product/ProductStyles.module.scss';
+import React, { FC } from 'react';
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
+import styles from '../Product/ProductStyles.module.scss';
+import Image from 'next/image';
 
 interface ProductGalleryProps {
   product: UltimateProducts;
   productImage: string;
-  handleThumbnailProductClick: (image: string) => void;
+  activeIndex: number;
+  handleThumbnailProductClick: (image: string, index: number) => void;
 }
 
 export const ProductGallery: FC<ProductGalleryProps> = ({
   product,
   productImage,
+  activeIndex,
   handleThumbnailProductClick,
 }) => {
+  const productImages = product.productImages[0];
+
   return (
     <div className={styles.product__imagesBlock}>
       <div className={styles.productImages__items}>
-        <Image
-          src={product.productImages[0].first}
-          alt='product image'
-          width={80}
-          height={100}
-          className={styles.smallImage}
-          onClick={() =>
-            handleThumbnailProductClick(product.productImages[0].first)
-          }
-        />
-        <Image
-          src={product.productImages[0].second}
-          alt='product image'
-          width={80}
-          height={100}
-          className={styles.smallImage}
-          onClick={() =>
-            handleThumbnailProductClick(product.productImages[0].second)
-          }
-        />
-        <Image
-          src={product.productImages[0].third}
-          alt='product image'
-          width={80}
-          height={100}
-          className={styles.smallImage}
-          onClick={() =>
-            handleThumbnailProductClick(product.productImages[0].third)
-          }
-        />
-        <Image
-          src={product.productImages[0].four}
-          alt='product image'
-          width={80}
-          height={100}
-          className={styles.smallImage}
-          onClick={() =>
-            handleThumbnailProductClick(product.productImages[0].four)
-          }
-        />
-        <Image
-          src={product.productImages[0].five}
-          alt='product image'
-          width={80}
-          height={100}
-          className={styles.smallImage}
-          onClick={() =>
-            handleThumbnailProductClick(product.productImages[0].five)
-          }
-        />
+        {Object.values(productImages).map((image, index) => (
+          <Image
+            key={index}
+            src={image}
+            alt='product image'
+            width={80}
+            height={100}
+            className={styles.smallImage}
+            onClick={() => handleThumbnailProductClick(image, index)}
+            style={{
+              opacity: activeIndex === index ? 0.5 : 1,
+              border: activeIndex === index ? '2px solid gray' : '',
+            }}
+          />
+        ))}
       </div>
       <Image
-        priority
         src={productImage}
-        alt={`${product.title}`}
+        alt={product.title}
         width={400}
         height={400}
         className={styles.productMainImage}

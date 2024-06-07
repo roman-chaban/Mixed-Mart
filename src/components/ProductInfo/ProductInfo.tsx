@@ -1,8 +1,11 @@
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import styles from '@/components/Product/ProductStyles.module.scss';
-import { Star } from 'grommet-icons';
+import { Favorite, Star } from 'grommet-icons';
 import type { FC } from 'react';
 import { ProductItemCounter } from '../ProductItemCounter/ProductItemCounter';
+import { Button } from '../ui/Button/Button';
+import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
+import { productDeliveryItems } from '@/interfaces/productDelivery';
 
 interface ProductInfoProps {
   product: UltimateProducts;
@@ -28,7 +31,19 @@ export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
           <mark className={styles.discount__through}>{product.price}₴</mark>
         </h5>
       </div>
-      <ProductItemCounter />
+      <div className={styles.productToBuy__block}>
+        <ProductItemCounter />
+        <Button type='button' className={styles.productToBuy__button}>
+          Buy Now
+        </Button>
+        <Button className={styles.favorite__button} type='button'>
+          <Favorite color='plain' />
+        </Button>
+      </div>
+      <ProductDelivery
+        firstPoint={productDeliveryItems.firstPoint}
+        secondPoint={productDeliveryItems.secondPoint}
+      />
     </div>
   );
 };

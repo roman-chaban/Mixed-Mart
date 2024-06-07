@@ -164,3 +164,33 @@
   text-decoration: line-through;
   text-decoration-color: $primary-gray;
 }
+
+.productToBuy__block {
+  display: flex;
+  align-items: center;
+  gap: rem(20px);
+  margin-top: rem(20px);
+}
+
+.productToBuy__button {
+  background: $primary-dark-red;
+  color: $primary-light-white;
+  font-size: $primary-base;
+  width: 100%;
+  padding: 10px 40px;
+  width: 165px;
+  border-radius: rem(8px);
+  height: 50px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.favorite__button {
+  padding: rem(14px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid $primary-light-black;
+  background: transparent;
+  border-radius: rem(8px);
+}

@@ -3,8 +3,6 @@
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import { useState, type FC } from 'react';
 import styles from './ProductStyles.module.scss';
-import Image from 'next/image';
-import { Star } from 'grommet-icons';
 import Link from 'next/link';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
 import { ProductGallery } from '../ProductGallery/ProductGallery';
@@ -15,9 +13,11 @@ interface ProductProps {
 
 export const Product: FC<ProductProps> = ({ product }) => {
   const [productImage, setProductImage] = useState(product.image);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
-  const handleThumbnailProductClick = (image: string) => {
+  const handleThumbnailProductClick = (image: string, index: number) => {
     setProductImage(image);
+    setActiveIndex(index);
   };
 
   return (
@@ -34,6 +34,7 @@ export const Product: FC<ProductProps> = ({ product }) => {
         </div>
         <div className={styles.productItem}>
           <ProductGallery
+            activeIndex={activeIndex}
             product={product}
             productImage={productImage}
             handleThumbnailProductClick={handleThumbnailProductClick}
