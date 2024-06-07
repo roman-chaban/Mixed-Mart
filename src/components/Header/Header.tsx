@@ -29,10 +29,9 @@ export const Header: FC = () => {
           <label htmlFor='search' className={styles.searchLabel}>
             <Input
               value={searchValue}
-              setValue={(event) => setSearchValue(event.target.value)}
+              onChange={(event) => setSearchValue(event.target.value)}
               name='search'
               type='text'
-              id='search'
               placeholder='What are you looking for?'
               className={styles.searchInput}
             />
