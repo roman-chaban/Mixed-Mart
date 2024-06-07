@@ -7,7 +7,6 @@ import { useCountdownTimer } from '@/hooks/useCountdownTimer';
 import { FormNext, FormPrevious } from 'grommet-icons';
 import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
 import { ProductCard } from '../ProductCard/ProductCard';
-import { Product } from '@/interfaces/ultimateProducts';
 import ultimateProducts from '@/api/ultimateProducts/ultimateProducts.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -16,12 +15,13 @@ import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
+import { UltimateProducts } from '@/interfaces/ultimateProducts';
 
 const Sales: FC = () => {
   const swiperRef = useRef<any>(null);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
-  const [products, setProducts] = useState<Product[]>(ultimateProducts);
+  const [products, setProducts] = useState<UltimateProducts[]>(ultimateProducts);
   const endDate = new Date('2024-06-10T00:00:00Z');
   const timeRemaining = useCountdownTimer(endDate);
 
