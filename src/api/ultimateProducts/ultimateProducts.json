@@ -1,12 +1,14 @@
 [
   {
-    "productTitle": "Laptop ASUS ROG Strix G713PI-LL097 (90NR0GG4-M008B0)",
-    "productRating": 4.8,
-    "productDiscount": "69 999",
-    "productPrice": "89 999",
-    "productId": 385973961,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/9/1923862_zoom_1.jpg",
+    "productId": 0,
+    "title": "Laptop ASUS ROG Strix G713PI-LL097 (90NR0GG4-M008B0)",
+    "name": "Laptop-ASUS-ROG-Strix-G713PI-LL097-(90NR0GG4-M008B0)",
+    "rating": 4.8,
+    "discount": "69 999",
+    "price": "89 999",
+    "id": 385973961,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/9/1923862_zoom_1.jpg",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/4/6/46_4000_5_1.jpg",
@@ -18,13 +20,15 @@
     ]
   },
   {
-    "productTitle": "Laptop ASUS ROG Strix G16 G614JV-N3442 (90NR0C61-M00YU0)",
-    "productRating": 4.7,
-    "productDiscount": "59 999",
-    "productPrice": "66 999",
-    "productId": 1037438,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe4e13e697.21246959_result.webp",
+    "productId": 1,
+    "title": "Laptop ASUS ROG Strix G16 G614JV-N3442 (90NR0C61-M00YU0)",
+    "name": "Laptop-ASUS-ROG-Strix-G16-G614JV-N3442-(90NR0C61-M00YU0)",
+    "rating": 4.7,
+    "discount": "59 999",
+    "price": "66 999",
+    "id": 1037439,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe4e13e697.21246959_result.webp",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe537b55c1.28077704_result.webp",
@@ -36,13 +40,15 @@
     ]
   },
   {
-    "productTitle": "Laptop ASUS ROG Strix SCAR G634JYR-RA041X (90NR0IJ2-M001M0)",
-    "productRating": 5,
-    "productDiscount": "186 999",
-    "productPrice": "159 999",
-    "productId": 1031512,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/8/1874951_zoom1.jpg",
+    "productId": 2,
+    "title": "Laptop ASUS ROG Strix SCAR G634JYR-RA041X (90NR0IJ2-M001M0)",
+    "name": "Laptop-ASUS-ROG-Strix-SCAR-G634JYR-RA041X-(90NR0IJ2-M001M0)",
+    "rating": 5,
+    "discount": "186 999",
+    "price": "159 999",
+    "id": 1031512,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/8/1874951_zoom1.jpg",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/4/4/44_4000_18.jpg",
@@ -54,13 +60,15 @@
     ]
   },
   {
-    "productTitle": "Laptop ASUS ROG Strix G16 G614JV-N3442 (90NR0C61-M00YU0)",
-    "productRating": 4.7,
-    "productDiscount": "59 999",
-    "productPrice": "66 999",
-    "productId": 1037438,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe4e13e697.21246959_result.webp",
+    "productId": 3,
+    "title": "Laptop ASUS ROG Strix G16 G614JV-N3442 (90NR0C61-M00YU0)",
+    "name": "Laptop-ASUS-ROG-Strix-G16-G614JV-N3442-(90NR0C61-M00YU0)",
+    "rating": 4.7,
+    "discount": "59 999",
+    "price": "66 999",
+    "id": 1037438,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe4e13e697.21246959_result.webp",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/3/63bebe537b55c1.28077704_result.webp",
@@ -72,13 +80,15 @@
     ]
   },
   {
-    "productTitle": "Gaming Laptop ASUS TUF Gaming FA506NF-HN019 (90NR0JE7-M004D0)",
-    "productRating": 4.9,
-    "productDiscount": "32 999",
-    "productPrice": "36 999",
-    "productId": 1049050,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/a/s/asus-tuf-gaming-a15-fa506nf-hn019-90nr0je7-m004d0-graphite-black_result.webp",
+    "productId": 4,
+    "title": "Gaming Laptop ASUS TUF Gaming FA506NF-HN019 (90NR0JE7-M004D0)",
+    "name": "Gaming-Laptop-ASUS-TUF-Gaming-FA506NF-HN019-(90NR0JE7-M004D0)",
+    "rating": 4.9,
+    "discount": "32 999",
+    "price": "36 999",
+    "id": 1049050,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/a/s/asus-tuf-gaming-a15-fa506nf-hn019-90nr0je7-m004d0-graphite-black_result.webp",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/a/s/asus-tuf-gaming-a15-fa506nf-hn019-90nr0je7-m004d0-graphite-black_1__result.webp",
@@ -90,13 +100,15 @@
     ]
   },
   {
-    "productTitle": "Laptop ASUS TUF Gaming FX607JV-N3112 (90NR0HV6-M00BM0)",
-    "productRating": 4.5,
-    "productDiscount": "62 999",
-    "productPrice": "65 999",
-    "productId": 1042065,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/3/13805435.webp",
+    "productId": 5,
+    "title": "Laptop ASUS TUF Gaming FX607JV-N3112 (90NR0HV6-M00BM0)",
+    "name": "Laptop-ASUS-TUF-Gaming-FX607JV-N3112-(90NR0HV6-M00BM0)",
+    "rating": 4.5,
+    "discount": "62 999",
+    "price": "65 999",
+    "id": 1042065,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/3/13805435.webp",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/1/3/13805425.webp",
@@ -108,13 +120,15 @@
     ]
   },
   {
-    "productTitle": "Laptop Apple MacBook Air 15' M2 256GB (MQKU3) Starlight",
-    "productRating": 4.8,
-    "productDiscount": "62 499",
-    "productPrice": "69 999",
-    "productId": 994381,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/b/mba15-starlight-gallery1-202306_result_1.jpg",
+    "productId": 6,
+    "title": "Laptop Apple MacBook Air 15 M2 256GB (MQKU3) Starlight",
+    "name": "Laptop-Apple-MacBook-Air-15-M2-256GB-(MQKU3)-Starlight",
+    "rating": 4.8,
+    "discount": "62 499",
+    "price": "69 999",
+    "id": 994381,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/b/mba15-starlight-gallery1-202306_result_1.jpg",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/a/macbook_air_15_starlight_pdp_image_position_2__en-us_.jpg",
@@ -126,13 +140,15 @@
     ]
   },
   {
-    "productTitle": "Laptop Apple MacBook Air 13' M3 8/256GB (MRXV3) Midnight",
-    "productRating": 5,
-    "productDiscount": "53 499",
-    "productPrice": "59 499",
-    "productId": 1035985,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/a/macbook_air_13-in_m3_chip_midnight_pure_front_screen__usen_1_1.webp",
+    "productId": 7,
+    "title": "Laptop Apple MacBook Air 13 M3 8/256GB (MRXV3) Midnight",
+    "name": "Laptop-Apple-MacBook-Air-13-M3-8/256GB-(MRXV3)-Midnight",
+    "rating": 5,
+    "discount": "53 499",
+    "price": "59 499",
+    "id": 1035985,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/a/macbook_air_13-in_m3_chip_midnight_pure_front_screen__usen_1_1.webp",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/m/a/macbook_air_13-in_m3_chip_midnight_pure_side_left_screen__usen_1_1.webp",
@@ -144,31 +160,35 @@
     ]
   },
   {
-    "productTitle": "Laptop Apple MacBook Pro 14' M3 512GB (MTL73) Space Grey",
-    "productRating": 5,
-    "productDiscount": "76 999",
-    "productPrice": "85 999",
-    "productId": 1012077,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/2/_/2_9_14.jpg",
+    "productId": 8,
+    "title": "Laptop Apple MacBook Pro 14 M3 512GB (MTL73) Space Grey",
+    "name": "Laptop-Apple-MacBook-Pro-14-M3-512GB-(MTL73)-Space-Grey",
+    "rating": 5,
+    "discount": "76 999",
+    "price": "85 999",
+    "id": 1012077,
+    "category": "Laptop",
+    "image": "https://i.moyo.ua/img/products/5564/67_600.jpg",
     "productImages": [
       {
-        "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/3/_/3_9_24.jpg",
-        "second": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/4/_/4_8_16.jpg",
-        "third": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/7/_/7_4_20.jpg",
-        "four": "",
-        "five": ""
+        "first": "https://i.moyo.ua/img/gallery/5564/67/1783165_middle.jpg?_gl=1*10amtir*_gcl_au*MTM4NTQ5NzgxNS4xNzE3NzcyNTcy*_ga*MTk1ODg0MDUyOS4xNzE3NzcyNTc0*_ga_2YP56NYVCH*MTcxNzc3MjU3My4xLjAuMTcxNzc3MjU3My4wLjAuMzUwNDI3MzE4",
+        "second": "https://i.moyo.ua/img/gallery/5564/67/1783162_zoom.jpg",
+        "third": "https://i.moyo.ua/img/gallery/5564/67/1783167_zoom.jpg",
+        "four": "https://i.moyo.ua/img/gallery/5564/67/1783168_zoom.jpg",
+        "five": "https://i.moyo.ua/img/gallery/5564/67/1783166_zoom.jpg"
       }
     ]
   },
   {
-    "productTitle": "Laptop Apple MacBook Air 13' M2 512GB (MLY23) Starlight",
-    "productRating": 4.4,
-    "productDiscount": "69 499",
-    "productPrice": "77 499",
-    "productId": 960172,
-    "productCategory": "Laptop",
-    "productImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/1/6163u6j42qur7doppy7g7vqdds5b04il_result_edited.jpg",
+    "productId": 9,
+    "title": "Laptop Apple MacBook Air 13 M2 512GB (MLY23) Starlight",
+    "name": "Laptop-Apple-MacBook-Air-13-M2-512GB-(MLY23)-Starlight",
+    "rating": 4.4,
+    "discount": "69 499",
+    "price": "77 499",
+    "id": 960172,
+    "category": "Laptop",
+    "image": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/6/1/6163u6j42qur7doppy7g7vqdds5b04il_result_edited.jpg",
     "productImages": [
       {
         "first": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/d/idd3isb27hm1rfzj2iv08e8oak66drli_result.jpg",
