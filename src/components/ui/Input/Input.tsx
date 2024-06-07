@@ -1,33 +1,28 @@
-import { ChangeEvent, FC } from 'react';
+import { FC, ChangeEvent } from 'react';
 
 interface InputProps {
+  className: string;
   placeholder: string;
   type: string;
-  name?: string;
-  className: string;
-  id?: string;
+  name: string;
   value: string;
-  setValue: (event: ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input: FC<InputProps> = ({
-  id,
-  name,
-  setValue,
-  type,
-  value,
-  placeholder,
   className,
-}) => {
-  return (
-    <input
-      type={type}
-      value={value}
-      id={id}
-      placeholder={placeholder}
-      name={name}
-      onChange={setValue}
-      className={className}
-    />
-  );
-};
+  placeholder,
+  type,
+  name,
+  value,
+  onChange,
+}) => (
+  <input
+    className={className}
+    placeholder={placeholder}
+    type={type}
+    name={name}
+    value={value}
+    onChange={onChange}
+  />
+);

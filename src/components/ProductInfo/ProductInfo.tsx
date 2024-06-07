@@ -2,6 +2,7 @@ import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import styles from '@/components/Product/ProductStyles.module.scss';
 import { Star } from 'grommet-icons';
 import type { FC } from 'react';
+import { ProductItemCounter } from '../ProductItemCounter/ProductItemCounter';
 
 interface ProductInfoProps {
   product: UltimateProducts;
@@ -27,6 +28,7 @@ export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
           <mark className={styles.discount__through}>{product.price}₴</mark>
         </h5>
       </div>
+      <ProductItemCounter />
     </div>
   );
 };

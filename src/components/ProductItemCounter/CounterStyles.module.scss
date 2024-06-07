@@ -1,0 +1,49 @@
+@import '../../assets/colors.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/globals.scss';
+
+.counterItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 159px;
+  border-radius: rem(10px);
+  border: 1.5px solid $primary-light-black;
+}
+
+.initialItem {
+  font-size: $secondary;
+  font-weight: 500;
+}
+
+.counterPlus,
+.counterMinus {
+  padding: rem(10px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  background: transparent;
+  font-size: $secondary;
+}
+
+.counterPlus {
+  border-right: 1.5px solid $primary-light-black;
+}
+
+.counterMinus {
+  border-left: 1.5px solid $primary-light-black;
+}
+
+.activePlus {
+  background: rgb(8, 196, 8);
+  border-radius: rem(8px);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.activeMinus {
+  background: $primary-dark-red;
+  border-radius: rem(8px);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

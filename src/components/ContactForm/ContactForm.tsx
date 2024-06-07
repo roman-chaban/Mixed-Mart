@@ -24,6 +24,7 @@ export const ContactForm: FC = () => {
       [name]: value,
     }));
   };
+
   return (
     <form action='' className={styles.contact__form}>
       <div className={styles.formInputs__block}>
@@ -31,33 +32,36 @@ export const ContactForm: FC = () => {
           className={styles.formInput}
           placeholder='Your Name'
           type='text'
+          name='name'
           value={formValues.name}
-          setValue={handleChangeFormValues}
+          onChange={handleChangeFormValues}
         />
         <Input
           className={styles.formInput}
           placeholder='Your Email'
           type='email'
+          name='email'
           value={formValues.email}
-          setValue={handleChangeFormValues}
+          onChange={handleChangeFormValues}
         />
         <Input
           className={styles.formInput}
           placeholder='Your Phone'
           type='number'
+          name='phone'
           value={formValues.phone}
-          setValue={handleChangeFormValues}
+          onChange={handleChangeFormValues}
         />
       </div>
       <TextArea
-        setValue={handleChangeFormValues}
         className={styles.from__textArea}
-        placeholder='Your Massage'
-        name='message'
+        placeholder='Your Message'
+        name='areaValue'
         value={formValues.areaValue}
+        onChange={handleChangeFormValues}
       />
       <Button type='button' className={styles.form__sendButton}>
-        Send Massage
+        Send Message
       </Button>
     </form>
   );

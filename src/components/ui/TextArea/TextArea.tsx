@@ -1,30 +1,25 @@
-import { ChangeEvent, FC } from 'react';
+import { FC, ChangeEvent } from 'react';
 
 interface TextAreaProps {
-  name: string;
-  id?: string;
   className: string;
   placeholder: string;
+  name: string;
   value: string;
-  setValue: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 export const TextArea: FC<TextAreaProps> = ({
-  id,
-  name,
-  setValue,
-  value,
   className,
   placeholder,
-}) => {
-  return (
-    <textarea
-      placeholder={placeholder}
-      name={name}
-      id={id}
-      value={value}
-      onChange={setValue}
-      className={className}
-    />
-  );
-};
+  name,
+  value,
+  onChange,
+}) => (
+  <textarea
+    className={className}
+    placeholder={placeholder}
+    name={name}
+    value={value}
+    onChange={onChange}
+  />
+);

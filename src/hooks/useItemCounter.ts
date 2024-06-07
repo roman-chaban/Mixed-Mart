@@ -19,7 +19,7 @@ export const useItemCounter = ({ productItem }: ItemCounterProps) => {
   }, [productItemNumber]);
 
   return {
-    productItem: productItem * productItemNumber,
+    productItemNumber,
     onAddProduct,
     onDeleteProduct,
   };
