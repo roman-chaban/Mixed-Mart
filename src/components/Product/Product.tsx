@@ -23,7 +23,9 @@ export const Product: FC<ProductProps> = ({ product }) => {
       <div className={styles.product__container}>
         <div className={styles.productNav__block}>
           <h3 className={styles.account}>
-            <Link className={styles.account__link} href='/computers'>Computers</Link>
+            <Link className={styles.account__link} href='/computers'>
+              Computers
+            </Link>
           </h3>
           <h4 className={styles.product__category}>{product.category}</h4>
           <h5 className={styles.product__title}>{product.title}</h5>
@@ -83,6 +85,7 @@ export const Product: FC<ProductProps> = ({ product }) => {
               />
             </div>
             <Image
+              priority
               src={productImage}
               alt={`${product.title}`}
               width={400}
@@ -102,8 +105,15 @@ export const Product: FC<ProductProps> = ({ product }) => {
               </span>
             </div>
             <div className={styles.productPrices__block}>
-              <h4 className={styles.product__price}>{product.discount}₴</h4>
-              <h5 className={styles.product__discount}>{product.price}₴</h5>
+              <h4 className={styles.product__price}>
+                Price Regular: {product.discount}₴
+              </h4>
+              <h5 className={styles.product__discount}>
+                Price Discount:{' '}
+                <mark className={styles.discount__through}>
+                  {product.price}₴
+                </mark>
+              </h5>
             </div>
           </div>
         </div>

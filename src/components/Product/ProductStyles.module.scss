@@ -85,8 +85,8 @@
 
 .productMainImage {
   object-fit: contain;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .smallImage {
@@ -149,16 +149,17 @@
 .product__discount {
   color: $primary-black;
   font-weight: 500;
-  font-size: $primary-five;
-}
-
-.product__discount {
-  text-decoration: line-through;
-  text-decoration-color: $primary-gray;
+  font-size: $primary-base;
 }
 
 .productPrices__block {
   display: flex;
   align-items: center;
-  gap: rem(40px);
+  justify-content: space-between;
+}
+
+.discount__through {
+  background: transparent;
+  text-decoration: line-through;
+  text-decoration-color: $primary-gray;
 }
