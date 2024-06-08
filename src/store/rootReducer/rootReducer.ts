@@ -1,5 +1,6 @@
+import { combineReducers } from 'redux';
+import { sliderSlice } from '../slices/sliderSlice';
 
-
-import { combineReducers } from "redux";
-
-export const rootReducer = combineReducers({});
+export const rootReducer = combineReducers({
+  sliderSlider: sliderSlice,
+});
