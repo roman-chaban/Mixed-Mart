@@ -13,6 +13,10 @@ interface ProductCardProps {
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={styles.productCard}>
       <div className={styles.productCard__container}>
@@ -39,7 +43,11 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
           <Star color='plain' />({product.rating})
         </div>
         <span className={styles.productCard__id}>ProductId: {product.id}</span>
-        <Button type='button' className={styles.productCard__button}>
+        <Button
+          type='button'
+          className={styles.productCard__button}
+          onClick={handleScrollTop}
+        >
           <Link
             className={styles.productCard__link}
             href={`/computers/${product.name.replaceAll(' ', '-')}`}

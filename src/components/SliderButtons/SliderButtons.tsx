@@ -3,13 +3,13 @@ import styles from '@/components/ProductsSlider/ProductSliderStyles.module.scss'
 import { FormNext, FormPrevious } from 'grommet-icons';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
+import dynamic from 'next/dynamic';
 
 interface SliderButtonsProps {
   swiperRef: RefObject<any>;
   isNextDisabled: boolean;
   isPrevDisabled: boolean;
 }
-
 export const SliderButtons: FC<SliderButtonsProps> = ({
   swiperRef,
   isNextDisabled,
@@ -20,6 +20,7 @@ export const SliderButtons: FC<SliderButtonsProps> = ({
   const handleSlidePrev = () => {
     swiperRef.current?.swiper?.slidePrev();
     dispatch(setNextDisabled(false));
+    dispatch(setPrevDisabled(false));
   };
 
   const handleSlideNext = () => {
@@ -48,3 +49,5 @@ export const SliderButtons: FC<SliderButtonsProps> = ({
     </div>
   );
 };
+
+export default dynamic(() => Promise.resolve(SliderButtons), { ssr: false });
