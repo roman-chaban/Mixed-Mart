@@ -1,4 +1,4 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface SliderState {
   isNextDisabled: boolean;
@@ -6,21 +6,22 @@ interface SliderState {
 }
 
 const initialState: SliderState = {
-  isNextDisabled: false,
-  isPrevDisabled: true,
+  isNextDisabled: true,
+  isPrevDisabled: false,
 };
 
-export const sliderSlice = createSlice({
+const sliderSlice = createSlice({
   name: 'slider',
   initialState,
   reducers: {
-    setNextDisabled: (state, action: PayloadAction<boolean>) => {
+    setNextDisabled(state, action: PayloadAction<boolean>) {
       state.isNextDisabled = action.payload;
     },
-    setPrevDisabled: (state, action: PayloadAction<boolean>) => {
+    setPrevDisabled(state, action: PayloadAction<boolean>) {
       state.isPrevDisabled = action.payload;
     },
   },
 });
 
 export const { setNextDisabled, setPrevDisabled } = sliderSlice.actions;
+export default sliderSlice.reducer;

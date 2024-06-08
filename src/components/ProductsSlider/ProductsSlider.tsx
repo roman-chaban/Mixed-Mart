@@ -10,10 +10,13 @@ import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
-import { FormNext, FormPrevious } from 'grommet-icons';
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import ultimateProducts from '@/api/ultimateProducts/ultimateProducts.json';
 import { ProductCard } from '../ProductCard/ProductCard';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
+import { SliderButtons } from '../SliderButtons/SliderButtons';
 
 interface ProductSliderProps {
   title: string;
@@ -23,18 +26,20 @@ export const ProductSlider: FC<ProductSliderProps> = ({ title }) => {
   const [products, setProducts] =
     useState<UltimateProducts[]>(ultimateProducts);
   const swiperRef = useRef<any>(null);
-  const [isNextDisabled, setIsNextDisabled] = useState(false);
-  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
+  const { isNextDisabled, isPrevDisabled } = useAppSelector(
+    (state) => state.slider
+  );
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
-    setProducts(products);
-  }, [products]);
+    setProducts(ultimateProducts);
+  }, []);
 
   const updateNavigationButtons = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       const swiper = swiperRef.current.swiper;
-      setIsPrevDisabled(swiper.isBeginning);
-      setIsNextDisabled(swiper.isEnd);
+      dispatch(setNextDisabled(swiper.isBeginning));
+      dispatch(setPrevDisabled(swiper.isEnd));
     }
   };
 
@@ -49,6 +54,7 @@ export const ProductSlider: FC<ProductSliderProps> = ({ title }) => {
         swiperInstance.off('slideChange', updateNavigationButtons);
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -57,6 +63,11 @@ export const ProductSlider: FC<ProductSliderProps> = ({ title }) => {
         <div className={styles.slider}>
           <div className={styles.sliderNav}>
             {title.length === 0 ? '' : <TitleBlock title={title} />}
+            <SliderButtons
+              isNextDisabled={isNextDisabled}
+              isPrevDisabled={isPrevDisabled}
+              swiperRef={swiperRef}
+            />
           </div>
           <Swiper
             ref={swiperRef}
@@ -64,8 +75,8 @@ export const ProductSlider: FC<ProductSliderProps> = ({ title }) => {
             spaceBetween={20}
             speed={1000}
             loop={false}
-            allowSlideNext={!isNextDisabled}
-            allowSlidePrev={!isPrevDisabled}
+            allowSlideNext={!isPrevDisabled}
+            allowSlidePrev={!isNextDisabled}
             style={{ cursor: 'grab' }}
             onSlideChange={updateNavigationButtons}
           >

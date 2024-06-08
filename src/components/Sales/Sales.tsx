@@ -1,12 +1,14 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import styles from './SalesStyles.module.scss';
-import dynamic from 'next/dynamic';
-import { useCountdownTimer } from '@/hooks/useCountdownTimer';
 import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
+import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
+import { useCountdownTimer } from '@/hooks/useCountdownTimer';
+import dynamic from 'next/dynamic';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { ProductSlider } from '../ProductsSlider/ProductsSlider';
-import { SliderButtons } from '../SliderButtons/SliderButtons';
 
 const Sales: FC = () => {
   const endDate = new Date('2024-06-18T00:00:00Z');
@@ -39,10 +41,9 @@ const Sales: FC = () => {
                 </p>
               </div>
             </div>
-            {/* <SliderButtons  /> */}
           </div>
         </div>
-        <ProductSlider title={''} />
+        <ProductSlider title='' />
       </div>
     </section>
   );
