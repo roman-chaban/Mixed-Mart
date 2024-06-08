@@ -6,6 +6,8 @@ import styles from './ProductStyles.module.scss';
 import Link from 'next/link';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
 import { ProductGallery } from '../ProductGallery/ProductGallery';
+import { ProductSlider } from '../ProductsSlider/ProductsSlider';
+import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
 
 interface ProductProps {
   product: UltimateProducts;
@@ -41,6 +43,7 @@ export const Product: FC<ProductProps> = ({ product }) => {
           />
           <ProductInfo product={product} />
         </div>
+        <ProductSlider title='Related Item' />
       </div>
     </div>
   );

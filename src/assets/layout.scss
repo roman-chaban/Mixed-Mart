@@ -1,6 +1,10 @@
 @import './reset.scss';
 @import './colors.scss';
 
+.swiper {
+  width: 100% !important;
+  max-width: 1440px !important;
+}
 
 .swiper-pagination {
   margin-top: 20px !important;
