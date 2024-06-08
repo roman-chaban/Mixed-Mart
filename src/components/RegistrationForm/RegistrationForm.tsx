@@ -80,7 +80,7 @@ export const RegistrationForm: FC<RegistrationFormProps> = ({
         </Button>
         <div className={styles.formButtonBlock__titles}>
           <span className={styles.already__title}>{alreadyTextTitle}</span>
-          <Link className={styles.logIn__link} href='/logIn'>
+          <Link className={styles.logIn__link} href='/auth/SignIn'>
             Log in
           </Link>
         </div>

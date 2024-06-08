@@ -5,8 +5,8 @@ import styles from './ProductCardStyles.module.scss';
 import type { FC } from 'react';
 import Image from 'next/image';
 import { Star } from 'grommet-icons';
-import { Button } from '../ui/Button/Button';
 import Link from 'next/link';
+import { Button } from '@/components/ui/Button/Button';
 
 interface ProductCardProps {
   product: UltimateProducts;

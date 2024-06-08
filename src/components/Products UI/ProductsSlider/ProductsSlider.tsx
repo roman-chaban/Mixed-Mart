@@ -2,7 +2,6 @@
 
 import { FC, useEffect, useRef, useState } from 'react';
 import styles from './ProductSliderStyles.module.scss';
-import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,7 +15,8 @@ import { ProductCard } from '../ProductCard/ProductCard';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
-import { SliderButtons } from '../SliderButtons/SliderButtons';
+import { SliderButtons } from '@/components/SliderButtons/SliderButtons';
+import { TitleBlock } from '@/components/ui/TitleBlock/TitleBlock';
 
 interface ProductSliderProps {
   title: string;

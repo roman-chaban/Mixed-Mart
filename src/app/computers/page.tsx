@@ -1,11 +1,10 @@
 'use client'
 
-import { Product } from '@/components/Product/Product';
 import { useEffect, useState } from 'react';
 import styles from './ComputersStyles.module.scss';
 import computersProducts from '@/api/ultimateProducts/ultimateProducts.json';
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
-import { ProductCard } from '@/components/ProductCard/ProductCard';
+import { ProductCard } from '@/components/Products UI/ProductCard/ProductCard';
 
 export default function Computers() {
   const [computers, setComputers] = useState<UltimateProducts[]>([]);

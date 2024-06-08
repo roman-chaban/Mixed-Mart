@@ -1,5 +1,5 @@
 import { FC, RefObject } from 'react';
-import styles from '@/components/ProductsSlider/ProductSliderStyles.module.scss';
+import styles from '@/components/Products UI/ProductsSlider/ProductSliderStyles.module.scss';
 import { FormNext, FormPrevious } from 'grommet-icons';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
@@ -10,6 +10,7 @@ interface SliderButtonsProps {
   isNextDisabled: boolean;
   isPrevDisabled: boolean;
 }
+
 export const SliderButtons: FC<SliderButtonsProps> = ({
   swiperRef,
   isNextDisabled,
@@ -18,14 +19,19 @@ export const SliderButtons: FC<SliderButtonsProps> = ({
   const dispatch = useAppDispatch();
 
   const handleSlidePrev = () => {
-    swiperRef.current?.swiper?.slidePrev();
-    dispatch(setNextDisabled(false));
-    dispatch(setPrevDisabled(false));
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+      dispatch(setPrevDisabled(false));
+      dispatch(setNextDisabled(false));
+    }
   };
 
   const handleSlideNext = () => {
-    swiperRef.current?.swiper?.slideNext();
-    dispatch(setPrevDisabled(false));
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+      dispatch(setNextDisabled(false));
+      dispatch(setPrevDisabled(false));
+    }
   };
 
   return (

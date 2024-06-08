@@ -54,6 +54,10 @@ export const CategoriesBlocks: FC = () => {
     setActiveIndex(index);
   };
 
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={styles.categories__blocks}>
       {categories.map((category, index) => (
@@ -61,15 +65,16 @@ export const CategoriesBlocks: FC = () => {
           href={category.href}
           key={index}
           className={styles.categoryBlock__item}
-          onClick={() =>
+          onClick={() => {
             handleCategoryClick(
               index,
               '#db4444',
               'white',
               'white',
               category.href
-            )
-          }
+            ),
+              handleScrollTop();
+          }}
           style={{ background: category.backgroundColor }}
         >
           {index === 0 && <PhoneVertical color={category.iconColor} />}

@@ -2,10 +2,10 @@ import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import styles from '@/components/Product/ProductStyles.module.scss';
 import { Favorite, Star } from 'grommet-icons';
 import type { FC } from 'react';
-import { ProductItemCounter } from '../ProductItemCounter/ProductItemCounter';
-import { Button } from '../ui/Button/Button';
 import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
 import { productDeliveryItems } from '@/interfaces/productDelivery';
+import { ProductItemCounter } from '@/components/ProductItemCounter/ProductItemCounter';
+import { Button } from '@/components/ui/Button/Button';
 
 interface ProductInfoProps {
   product: UltimateProducts;

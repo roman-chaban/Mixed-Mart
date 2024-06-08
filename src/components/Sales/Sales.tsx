@@ -1,14 +1,11 @@
 'use client';
 
-import { FC, useEffect, useRef } from 'react';
+import type { FC } from 'react';
 import styles from './SalesStyles.module.scss';
 import { TitleBlock } from '../ui/TitleBlock/TitleBlock';
-import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
 import { useCountdownTimer } from '@/hooks/useCountdownTimer';
 import dynamic from 'next/dynamic';
-import { useAppSelector } from '@/hooks/useAppSelector';
-import { useAppDispatch } from '@/hooks/useAppDispatch';
-import { ProductSlider } from '../ProductsSlider/ProductsSlider';
+import { ProductSlider } from '../Products UI/ProductsSlider/ProductsSlider';
 
 const Sales: FC = () => {
   const endDate = new Date('2024-06-18T00:00:00Z');
