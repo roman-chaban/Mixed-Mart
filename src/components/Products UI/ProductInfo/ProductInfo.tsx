@@ -1,5 +1,5 @@
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
-import styles from '@/components/Product/ProductStyles.module.scss';
+import styles from '@/components/Products UI/Product/ProductStyles.module.scss';
 import { Favorite, Star } from 'grommet-icons';
 import type { FC } from 'react';
 import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
