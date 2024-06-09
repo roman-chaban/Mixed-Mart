@@ -9,7 +9,8 @@
 
 .services__container {
   @include mainContainer;
-  padding: 100px;
+  
+  padding: rem(100px);
 }
 
 .services__items {

@@ -9,7 +9,7 @@ export const AccountSideBar: FC = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.sideBar__nav}>
+    <aside className={styles.sideBar__nav}>
       <ul className={styles.account__menu}>
         <h3 className={styles.accountMenu__title}>Manage My Account</h3>
         <li
@@ -65,6 +65,6 @@ export const AccountSideBar: FC = () => {
         </li>
       </ul>
       <h5 className={styles.wishlist__title}>My WishList</h5>
-    </nav>
+    </aside>
   );
 };

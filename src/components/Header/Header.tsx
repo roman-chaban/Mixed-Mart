@@ -46,28 +46,27 @@ export const Header: FC = () => {
             <Search color='black' style={{ width: 20, height: 20 }} />
           </label>
           <div className={styles.header__iconsBlock}>
-          <div className={styles.favorite__block}>
-            <Favorite className={styles.icon} color='black' />
-            <span className={styles.icon__counter}>0</span>
-          </div>
-          <div className={styles.basket__block}>
-            <Basket className={styles.icon} color='black' />
-            <span className={styles.icon__counter}>0</span>
-          </div>
-          <div className={styles.account__block}>
-            <Image
-              objectFit='cover'
-              src='/icons/user.svg'
-              alt=''
-              width={22}
-              height={22}
-              onClick={handleDropDownToggle}
-            />
-            <DropDown
-              isMenuOpen={isDropDownOpen}
-              onToggle={handleDropDownToggle}
-            />
-          </div>
+            <div className={styles.favorite__block}>
+              <Favorite className={styles.icon} color='black' />
+              <span className={styles.icon__counter}>0</span>
+            </div>
+            <div className={styles.basket__block}>
+              <Basket className={styles.icon} color='black' />
+              <span className={styles.icon__counter}>0</span>
+            </div>
+            <div className={styles.account__block}>
+              <Image
+                src='/icons/user.svg'
+                alt=''
+                width={22}
+                height={22}
+                onClick={handleDropDownToggle}
+              />
+              <DropDown
+                isMenuOpen={isDropDownOpen}
+                onToggle={handleDropDownToggle}
+              />
+            </div>
           </div>
         </nav>
       </div>

@@ -14,7 +14,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'About',
-    href: '/About',
+    href: '/about',
   },
   {
     label: 'Sign Up',
