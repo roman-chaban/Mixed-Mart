@@ -14,7 +14,7 @@
   border-radius: 4px;
   width: 224px;
   backdrop-filter: blur(150px);
-  background: rgba(0, 0, 0, 0.04);
+  background: $primary-light-black;
   position: absolute;
   top: 20px;
   right: 0;
@@ -38,7 +38,8 @@
   gap: rem(12px);
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease,
+    transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 
   @keyframes slideIn {
     from {
@@ -93,6 +94,27 @@
 }
 
 .listItem__title {
-   color: $primary-light-white;
-   line-height: 1.5;
+  color: $primary-light-white;
+  line-height: 1.5;
+}
+
+.listItem__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 20px;
+    width: 0;
+    height: 1.5px;
+    background: $primary-input-background;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+    width: 100%;
+  }
 }

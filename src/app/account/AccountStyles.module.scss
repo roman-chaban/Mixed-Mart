@@ -1,0 +1,98 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.account {
+  min-height: 100vh;
+}
+
+.account__container {
+  @include mainContainer;
+  padding-left: rem(110px);
+  padding-right: rem(110px);
+  padding-bottom: rem(140px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(80px);
+}
+
+.accountInformation__block {
+  display: flex;
+  gap: rem(100px);
+}
+
+.account__navBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(80px);
+}
+
+.account__titles {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}
+
+.account__title {
+  color: $primary-black;
+  font-weight: 500;
+}
+
+.home__link {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+  color: $primary-light-black;
+  font-weight: 500;
+  line-height: 1.5;
+  &::after {
+    content: '';
+    display: block;
+    background: $primary-light-black;
+    width: 1px;
+    height: 14px;
+    transform: rotate(-155deg);
+  }
+}
+
+.userAuth__title {
+  color: $primary-black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.sideBar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+}
+
+.account__menu {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.accountMenu__title,
+.wishlist__title {
+  color: $primary-black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.account__listItem {
+  padding-left: rem(35px);
+}
+
+.account__listLink {
+  font-size: $primary-base;
+  color: $primary-light-black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.active {
+  color: $primary-dark-red;
+}

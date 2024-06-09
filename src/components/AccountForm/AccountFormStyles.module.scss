@@ -1,0 +1,91 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+
+.accountForm {
+  width: 100%;
+  border-radius: 4px;
+  max-width: 655px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  padding: 40px 80px;
+}
+
+.accountForm__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
+
+.accountForm__title {
+  font-size: $primary-five;
+  color: $primary-dark-red;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.accountForm__inputsBlock {
+  margin-top: rem(32px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: rem(24px);
+  column-gap: rem(50px);
+}
+
+.account__label {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+  font-weight: 500;
+}
+
+.account__input {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  background: $primary-input-background;
+  padding-left: rem(15px);
+}
+
+.password__label {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  color: $primary-black;
+  font-weight: 500;
+}
+
+.input__password {
+  width: 100%;
+  height: 40px;
+  background: $primary-input-background;
+  padding-left: rem(15px);
+}
+
+.accountButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: rem(20px);
+}
+
+.account__button {
+  width: 100%;
+  color: $primary-light-white;
+  background: $primary-dark-red;
+  line-height: 1.5;
+  font-weight: 500;
+  max-width: 214px;
+  border-radius: 4px;
+  padding: 16px 48px;
+}
+
+.account__cancel {
+  background: transparent;
+  padding: 0;
+  color: $primary-black;
+  font-weight: 500;
+  max-width: 100px;
+}
