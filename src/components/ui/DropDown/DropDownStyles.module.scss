@@ -1,0 +1,98 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/globals.scss';
+@import '../../../assets/functions.scss';
+@import '../../../assets/mixins.scss';
+
+.dropDown__container {
+  position: relative;
+}
+
+.dropDown__menu {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15px);
+  border-radius: 4px;
+  width: 224px;
+  backdrop-filter: blur(150px);
+  background: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 50;
+  padding: 20px 10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.menu__listItem {
+  display: flex;
+  align-items: center;
+  gap: rem(12px);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  &:nth-child(1) {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation: slideIn 0.3s ease forwards;
+    animation-delay: 0.5s;
+  }
+}
+
+.open .menu__listItem {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.dropDown__menu:not(.open) .menu__listItem {
+  animation: slideOut 0.3s ease forwards;
+}
+
+.listItem__title {
+   color: $primary-light-white;
+   line-height: 1.5;
+}

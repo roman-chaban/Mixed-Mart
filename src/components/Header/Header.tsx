@@ -6,13 +6,21 @@ import { HeaderBanner } from '../HeaderBanner/HeaderBanner';
 import { NavBarItems } from '../NavBarItems/NavBarItems';
 import { NavItem, navItems } from '@/common/navItems/navItems';
 import { Input } from '../ui/Input/Input';
-import { Basket, Favorite, Search } from 'grommet-icons';
+import { Basket, Favorite, Search, User } from 'grommet-icons';
 import { SearchValue } from '@/types/types';
 import { usePathname } from 'next/navigation';
+import { DropDown } from '../ui/DropDown/DropDown';
+import Image from 'next/image';
 
 export const Header: FC = () => {
   const pathname = usePathname();
   const [searchValue, setSearchValue] = useState<SearchValue>('');
+  const [isDropDownOpen, setIsDropDownOpen] = useState<boolean>(false);
+
+  const handleDropDownToggle = () => {
+    setIsDropDownOpen((prev) => !prev);
+  };
+
   return (
     <header className={styles.header}>
       <HeaderBanner />
@@ -37,6 +45,7 @@ export const Header: FC = () => {
             />
             <Search color='black' style={{ width: 20, height: 20 }} />
           </label>
+          <div className={styles.header__iconsBlock}>
           <div className={styles.favorite__block}>
             <Favorite className={styles.icon} color='black' />
             <span className={styles.icon__counter}>0</span>
@@ -44,6 +53,21 @@ export const Header: FC = () => {
           <div className={styles.basket__block}>
             <Basket className={styles.icon} color='black' />
             <span className={styles.icon__counter}>0</span>
+          </div>
+          <div className={styles.account__block}>
+            <Image
+              objectFit='cover'
+              src='/icons/user.svg'
+              alt=''
+              width={22}
+              height={22}
+              onClick={handleDropDownToggle}
+            />
+            <DropDown
+              isMenuOpen={isDropDownOpen}
+              onToggle={handleDropDownToggle}
+            />
+          </div>
           </div>
         </nav>
       </div>
