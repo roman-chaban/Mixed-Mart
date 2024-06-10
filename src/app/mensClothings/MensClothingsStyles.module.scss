@@ -1,0 +1,29 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.clothings {
+  min-height: 100vh;
+}
+
+.clothings {
+   display: flex;
+}
+
+.clothings__container {
+  @include mainContainer;
+  padding: rem(50px);
+}
+
+.clothings__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.clothings__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: $secondary;
+}
+

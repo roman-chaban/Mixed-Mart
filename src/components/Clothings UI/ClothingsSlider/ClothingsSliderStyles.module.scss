@@ -1,0 +1,54 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/globals.scss';
+@import '../../../assets/mixins.scss';
+@import '../../../assets/functions.scss';
+
+.productsSlider {
+  min-height: 100vh;
+}
+
+.slider__buttons {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+.next__button,
+.prev__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $primary-input-background;
+}
+
+.productCards {
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-end;
+  gap: rem(20px);
+}
+
+.slide {
+  max-width: 280px;
+  max-height: 600px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.sliderNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.slider__buttons {
+   margin-left: auto;
+}

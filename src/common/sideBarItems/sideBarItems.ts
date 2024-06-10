@@ -10,7 +10,7 @@ export const sideBarItems: SideBarItem[] = [
   },
   {
     label: 'Men’s Fashion',
-    href: '/Men’s Fashion',
+    href: '/mensClothings',
   },
   {
     label: 'Electronics',

@@ -5,12 +5,12 @@
 
 .arrival {
   min-height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .arrival__container {
   @include mainContainer;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .arrivalTitle__block {
@@ -26,4 +26,3 @@
   line-height: 1.33333;
   letter-spacing: 0.04em;
 }
-

@@ -4,7 +4,7 @@ import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import styles from './ProductCardStyles.module.scss';
 import type { FC } from 'react';
 import Image from 'next/image';
-import { Star } from 'grommet-icons';
+import { Star, StarHalf } from 'grommet-icons';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button/Button';
 
@@ -37,10 +37,12 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         </div>
         <div className={styles.productCard__rating}>
           Rating:
-          <Star color='plain' />
-          <Star color='plain' />
-          <Star color='plain' />
-          <Star color='plain' />({product.rating})
+          {product.rating === 5 ? (
+            <Star color='plain' />
+          ) : (
+            <StarHalf color='plain' />
+          )}
+          ({product.rating})
         </div>
         <span className={styles.productCard__id}>ProductId: {product.id}</span>
         <Button

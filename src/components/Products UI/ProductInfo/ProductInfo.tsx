@@ -1,6 +1,6 @@
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
 import styles from '@/components/Products UI/Product/ProductStyles.module.scss';
-import { Favorite, Star } from 'grommet-icons';
+import { Favorite, Star, StarHalf } from 'grommet-icons';
 import type { FC } from 'react';
 import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
 import { productDeliveryItems } from '@/interfaces/productDelivery';
@@ -17,8 +17,13 @@ export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
       <h2 className={styles.title}>{product.title}</h2>
       <div className={styles.productInformation__rating}>
         <h5 className={styles.product__rating}>
-          Laptop rating: {product.rating} <Star color='plain' /> |{' '}
-          <mark className={styles.stock__marker}>inStock</mark>
+          Laptop rating: {product.rating}{' '}
+          {product.rating === 5 ? (
+            <Star color='plain' />
+          ) : (
+            <StarHalf color='plain' />
+          )}{' '}
+          | <mark className={styles.stock__marker}>inStock</mark>
         </h5>
         <span className={styles.product__id}>Laptop id: {product.id}</span>
       </div>
