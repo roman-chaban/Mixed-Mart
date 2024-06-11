@@ -1,0 +1,54 @@
+@import '../../../assets/colors.scss';
+@import '../../../assets/globals.scss';
+@import '../../../assets/functions.scss';
+@import '../../../assets/mixins.scss';
+
+.product {
+  min-height: 100vh;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(80px);
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: rem(140px);
+}
+
+.product__flex {
+  display: flex;
+  gap: rem(50px);
+}
+
+.productNav__block {
+  display: flex;
+  align-items: center;
+  gap: rem(12px);
+  padding-top: rem(80px);
+}
+
+.product__category,
+.product__link {
+  display: flex;
+  align-items: center;
+  color: $primary-light-black;
+  font-weight: 500;
+  line-height: 1.5;
+  &::after {
+    content: '';
+    width: 13px;
+    transform: rotate(117deg);
+    flex-grow: 1;
+    margin-left: 12px;
+    height: 1px;
+    background: $primary-light-black;
+  }
+}
+
+.product__subStyle {
+  color: $primary-black;
+  line-height: 1.5;
+  font-weight: 500;
+}

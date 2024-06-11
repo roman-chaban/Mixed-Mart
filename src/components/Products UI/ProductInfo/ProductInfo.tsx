@@ -6,9 +6,10 @@ import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
 import { productDeliveryItems } from '@/interfaces/productDelivery';
 import { ProductItemCounter } from '@/components/ProductItemCounter/ProductItemCounter';
 import { Button } from '@/components/ui/Button/Button';
+import { mensFashionItem } from '@/interfaces/mens-fashion';
 
 interface ProductInfoProps {
-  product: UltimateProducts;
+  product: UltimateProducts | mensFashionItem;
 }
 
 export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
@@ -17,24 +18,38 @@ export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
       <h2 className={styles.title}>{product.title}</h2>
       <div className={styles.productInformation__rating}>
         <h5 className={styles.product__rating}>
-          Laptop rating: {product.rating}{' '}
-          {product.rating === 5 ? (
+          Product rating: {product.productRating}{' '}
+          {product.productRating === 5 ? (
             <Star color='plain' />
           ) : (
             <StarHalf color='plain' />
           )}{' '}
           | <mark className={styles.stock__marker}>inStock</mark>
         </h5>
-        <span className={styles.product__id}>Laptop id: {product.id}</span>
+        <span className={styles.product__id}>
+          Product id: {product.productId}
+        </span>
       </div>
       <div className={styles.productPrices__block}>
         <h4 className={styles.product__price}>
-          Price Regular: {product.discount}₴
+          Price Regular: {product.price} {+product.price <= 300 ? '$' : '₴'}
         </h4>
-        <h5 className={styles.product__discount}>
-          Price Discount:{' '}
-          <mark className={styles.discount__through}>{product.price}₴</mark>
-        </h5>
+        {product.priceDiscount === 0 ? (
+          ''
+        ) : (
+          <h5 className={styles.product__discount}>
+            Price Discount:{' '}
+            <mark className={styles.discount__through}>
+              {product.priceDiscount}{' '}
+              {+product.priceDiscount <= 300 ? '$' : '₴'}
+            </mark>
+          </h5>
+        )}
+      </div>
+      <p className={styles.product__about}>{product.about}</p>
+      <div className={styles.product__subStyle}>
+        <span>SubStyle: {product.subStyle}</span>
+        <span>{product.style}</span>
       </div>
       <div className={styles.productToBuy__block}>
         <ProductItemCounter />

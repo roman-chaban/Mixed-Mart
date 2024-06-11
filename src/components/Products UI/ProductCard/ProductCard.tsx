@@ -22,7 +22,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
       <div className={styles.productCard__container}>
         <Image
           priority
-          src={product.image}
+          src={product.mainImage}
           alt={`Product Image ${product.title}`}
           width={200}
           height={220}
@@ -31,18 +31,18 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         <h3 className={styles.productCard__title}>{product.title}</h3>
         <div className={styles.productCart__prices}>
           <h4 className={styles.productCard__price}>
-            Price: {product.discount}₴
+            Price: {product.priceDiscount}₴
           </h4>
           <p className={styles.productCard__discount}>{product.price}₴</p>
         </div>
         <div className={styles.productCard__rating}>
           Rating:
-          {product.rating === 5 ? (
+          {product.productRating === 5 ? (
             <Star color='plain' />
           ) : (
             <StarHalf color='plain' />
           )}
-          ({product.rating})
+          ({product.productRating})
         </div>
         <span className={styles.productCard__id}>ProductId: {product.id}</span>
         <Button

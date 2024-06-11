@@ -1,7 +1,7 @@
 export interface ProductImages {
-  first: string;
-  second: string;
-  third: string;
+  one: string;
+  two: string;
+  three: string;
   four: string;
   five: string;
 }
@@ -9,17 +9,20 @@ export interface ProductImages {
 export interface UltimateProducts {
   title: string;
   name: string;
-  rating: number;
-  discount: string;
+  productRating: number;
+  priceDiscount: string;
   price: string;
   productId: number;
   id: number;
   category: string;
-  image: string;
-  productImages: {
-    first: string;
-    second: string;
-    third: string;
+  about?: string;
+  style?: string;
+  subStyle?: string;
+  mainImage: string;
+  images: {
+    one: string;
+    two: string;
+    three: string;
     four: string;
     five: string;
   }[];

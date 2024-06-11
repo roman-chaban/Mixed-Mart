@@ -13,7 +13,7 @@ interface ProductProps {
 }
 
 export const Product: FC<ProductProps> = ({ product }) => {
-  const [productImage, setProductImage] = useState(product.image);
+  const [productImage, setProductImage] = useState(product.mainImage);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const handleThumbnailProductClick = (image: string, index: number) => {
