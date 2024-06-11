@@ -9,7 +9,7 @@ export interface mensFashionItem {
   subStyle: string;
   style: string;
   about: string;
-  id: number;
+  id?: number;
   mainImage: string;
   images: {
     one: string;
