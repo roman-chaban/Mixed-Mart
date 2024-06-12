@@ -1,0 +1,337 @@
+[
+  {
+    "productId": 3,
+    "title": "Apple-iPhone-14-256GB-Silver",
+    "name": "Apple iPhone 14 Pro Silver (MQ023)",
+    "color": "Silver",
+    "price": "1199",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1a_4.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1a_4.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1b_4.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-silver_av1_geo_us_1_1_1.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 4,
+    "title": "Apple-iPhone-14-256GB-DeepPurple",
+    "name": "Apple iPhone 14 Pro Deep Purple (MQ0G3)",
+    "color": "Deep Purple",
+    "price": "1199",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "firstImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1b_5.jpg",
+        "secondImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-4_5.jpg",
+        "thirdImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_av2_1_1.jpg",
+        "fourImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-2_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 5,
+    "title": "Apple-iPhone-14-128GB-Gold",
+    "name": "Apple iPhone 14 Pro Gold (MQ083)",
+    "color": "Gold",
+    "price": "1200",
+    "priceDiscount": "1750",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-gold_av1_geo_us_2_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-2_5.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-4_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 6,
+    "title": "Apple-iPhone-14-256GB-ProductRed",
+    "name": "Apple iPhone 14 Plus PRODUCT Red (MQ513)",
+    "color": "Product Red",
+    "price": "1099",
+    "priceDiscount": "1500",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1a_3.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1b_3.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av1_geo_us_2.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-2_3.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av2_2.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 7,
+    "title": "Apple-iPhone-14-256GB-Gold",
+    "name": "Apple iPhone 14 Pro Gold (MQ083)",
+    "color": "Gold",
+    "price": "1200",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-gold_av1_geo_us_2_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-2_5.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-4_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 8,
+    "title": "Apple-iPhone-14-128GB-Silver",
+    "name": "Apple iPhone 14 Pro Silver (MQ023)",
+    "color": "Silver",
+    "price": "1499",
+    "priceDiscount": "2000",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1a_4.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1b_4.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1b_4.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-silver_av1_geo_us_1_1_1.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 9,
+    "title": "Apple-iPhone-14-128GB-ProductRed",
+    "name": "Apple iPhone 14 Plus PRODUCT Red (MQ513)",
+    "color": "Product Red",
+    "price": "1099",
+    "priceDiscount": "1500",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1a_3.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1b_3.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av1_geo_us_2.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-2_3.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av2_2.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 10,
+    "title": "Apple-iPhone-14-128GB-DeepPurple",
+    "name": "Apple iPhone 14 Pro Deep Purple (MQ0G3)",
+    "color": "Deep Purple",
+    "price": "1299",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-4_5.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_av2_1_1.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-2_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 11,
+    "title": "Apple-iPhone-14-128GB-ProductRed",
+    "name": "Apple iPhone 14 Plus PRODUCT Red (MQ513)",
+    "color": "Product Red",
+    "price": "1099",
+    "priceDiscount": "200",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1a_3.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1b_3.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av1_geo_us_2.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av2_2.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 12,
+    "title": "Apple-iPhone-14-128GB-Gold",
+    "name": "Apple iPhone 14 Pro Gold (MQ083)",
+    "color": "Gold",
+    "price": "1299",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-gold_av1_geo_us_2_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-2_5.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-4_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 13,
+    "title": "Apple-iPhone-14-128GB-DeepPurple",
+    "name": "Apple iPhone 14 Pro Deep Purple (MQ0G3)",
+    "color": "Deep Purple",
+    "price": "1299",
+    "priceDiscount": "1800",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-4_5.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_av2_1_1.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-2_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 14,
+    "title": "Apple-iPhone-14-128GB-Silver",
+    "name": "Apple iPhone 14 Pro Silver (MQ023)",
+    "color": "Silver",
+    "price": "1200",
+    "priceDiscount": "1799",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1a_4.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1b_4.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-silver_av1_geo_us_1_1_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 15,
+    "title": "Apple-iPhone-14-128GB-Silver",
+    "name": "Apple iPhone 14 Pro Silver (MQ023)",
+    "color": "Silver",
+    "price": "1399",
+    "priceDiscount": "2000",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1a_4.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-1b_4.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-silver_av1_geo_us_1_1_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_silver_pdp-images_position-2_4.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 16,
+    "title": "Apple-iPhone-14-128GB-DeepPurple",
+    "name": "Apple iPhone 14 Pro Deep Purple (MQ0G3)",
+    "color": "Deep Purple",
+    "price": "1499",
+    "priceDiscount": "2000",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-4_5.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-deeppurple_av2_1_1.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_deep-purple_pdp-images_position-2_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 17,
+    "title": "Apple-iPhone-14-128GB-Gold",
+    "name": "Apple iPhone 14 Pro Gold (MQ083)",
+    "color": "Gold",
+    "price": "1199",
+    "priceDiscount": "1650",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1a_5.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-1b_5.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-pro-finish-select-202209-6-1inch-gold_av1_geo_us_2_1.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-2_5.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14pro_q422_gold_pdp-images_position-4_5.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  },
+  {
+    "productId": 18,
+    "title": "Apple-iPhone-14-128GB-ProductRed",
+    "name": "Apple iPhone 14 Plus PRODUCT Red (MQ513)",
+    "color": "Product Red",
+    "price": "1299",
+    "priceDiscount": "1999",
+    "memory": "128",
+    "capacity": 6,
+    "mainImage": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1a_3.jpg",
+    "images": [
+      {
+        "one": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-1b_3.jpg",
+        "two": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av1_geo_us_2.jpg",
+        "three": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/w/w/wwen_iphone14_q422_productred_pdp_image_position-2_3.jpg",
+        "four": "https://i.allo.ua/media/catalog/product/cache/3/image/434x494/602f0fa2c1f0d1ba5e241f914e856ff9/i/p/iphone-14-finish-select-202209-6-1inch-product-red_av2_2.jpg"
+      }
+    ],
+    "displaySize": "6.1",
+    "category": "electronics"
+  }
+]

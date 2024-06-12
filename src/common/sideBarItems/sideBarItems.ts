@@ -14,7 +14,7 @@ export const sideBarItems: SideBarItem[] = [
   },
   {
     label: 'Electronics',
-    href: '/Electronics',
+    href: '/electronics',
   },
   {
     label: 'Home & Lifestyle',

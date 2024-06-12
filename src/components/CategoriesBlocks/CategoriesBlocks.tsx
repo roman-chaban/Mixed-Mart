@@ -1,7 +1,13 @@
 'use client';
 
 import styles from '@/components/Categories/CategoriesStyles.module.scss';
-import { Camera, Gamepad, Monitor, PhoneVertical } from 'grommet-icons';
+import {
+  Camera,
+  CoatCheck,
+  Gamepad,
+  Monitor,
+  PhoneVertical,
+} from 'grommet-icons';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 
@@ -18,7 +24,7 @@ export const CategoriesBlocks: FC = () => {
       backgroundColor: '',
       textColor: '',
       iconColor: 'black',
-      href: '/',
+      href: '/mensClothings',
     },
     {
       backgroundColor: '',
@@ -77,7 +83,7 @@ export const CategoriesBlocks: FC = () => {
           }}
           style={{ background: category.backgroundColor }}
         >
-          {index === 0 && <PhoneVertical color={category.iconColor} />}
+          {index === 0 && <CoatCheck color={category.iconColor} />}
           {index === 1 && <Monitor color={category.iconColor} />}
           {index === 2 && <Camera color={category.iconColor} />}
           {index === 3 && <PhoneVertical color={category.iconColor} />}
@@ -86,7 +92,7 @@ export const CategoriesBlocks: FC = () => {
             className={styles.categoryBlock__title}
             style={{ color: category.textColor }}
           >
-            {index === 0 && 'Phones'}
+            {index === 0 && "Men's Clothings"}
             {index === 1 && 'Computers'}
             {index === 2 && 'Camera'}
             {index === 3 && 'Headphones'}

@@ -1,0 +1,16 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.electronics__container {
+  @include mainContainer;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.electronics__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(40px);
+}

@@ -52,7 +52,9 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         >
           <Link
             className={styles.productCard__link}
-            href={`/computers/${product.name.replaceAll(' ', '-')}`}
+            href={`/${product.category}/${
+              product.name ? product.name.replaceAll(' ', '-') : ''
+            }`}
           >
             View product
           </Link>

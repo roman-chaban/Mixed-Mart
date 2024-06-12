@@ -14,6 +14,10 @@ export interface UltimateProducts {
   price: string;
   productId: number;
   id: number;
+  color?: string;
+  capacity?: string;
+  memory?: string;
+  displaySize?: string;
   category: string;
   about?: string;
   style?: string;
