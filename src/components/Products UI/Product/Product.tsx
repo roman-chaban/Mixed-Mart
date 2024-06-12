@@ -10,9 +10,10 @@ import { ProductSlider } from '../ProductsSlider/ProductsSlider';
 
 interface ProductProps {
   product: UltimateProducts;
+  categoryTitle: string;
 }
 
-export const Product: FC<ProductProps> = ({ product }) => {
+export const Product: FC<ProductProps> = ({ product, categoryTitle }) => {
   const [productImage, setProductImage] = useState(product.mainImage);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -27,7 +28,7 @@ export const Product: FC<ProductProps> = ({ product }) => {
         <div className={styles.productNav__block}>
           <h3 className={styles.account}>
             <Link className={styles.account__link} href={product.category}>
-              Computers
+              {categoryTitle}
             </Link>
           </h3>
           <h4 className={styles.product__category}>{product.category}</h4>

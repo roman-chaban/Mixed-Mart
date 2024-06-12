@@ -18,7 +18,7 @@ export default function Laptop({ params: { name } }: LaptopProps) {
 
   return (
     <section className={styles.laptop}>
-      <Product product={filteredComputer as UltimateProducts} />
+      <Product categoryTitle='Computers' product={filteredComputer as UltimateProducts} />
     </section>
   );
 }

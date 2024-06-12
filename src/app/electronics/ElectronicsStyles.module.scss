@@ -14,3 +14,10 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: rem(40px);
 }
+
+.electronics__title {
+  padding-top: rem(50px);
+  text-align: center;
+  font-weight: 600;
+  font-size: $secondary;
+}

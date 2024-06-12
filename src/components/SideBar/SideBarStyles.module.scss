@@ -3,9 +3,14 @@
 @import '../../assets/functions.scss';
 @import '../../assets/mixins.scss';
 
+.sideBar {
+  border-bottom: 1.5px solid $primary-light-black;
+  border-right: 1.5px solid $primary-light-black;
+}
+
 .sideBar__container {
-   padding-left: 100px;
-   height: 344px;
+  padding-left: 100px;
+  height: 344px;
 }
 
 .menu {
@@ -14,7 +19,6 @@
   flex-direction: column;
   gap: rem(16px);
   padding-right: rem(48px);
-  border-right: 1.5px solid $primary-light-black;
 }
 
 .menu__listItem > .menu__listLink {
@@ -24,7 +28,6 @@
   font-weight: 500;
 }
 
-
 .menu:first-child {
-   padding-top: 40px;
+  padding-top: 40px;
 }

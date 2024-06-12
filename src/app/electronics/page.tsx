@@ -18,6 +18,9 @@ export default function Electronics() {
   return (
     <section className={styles.electronics}>
       <div className={styles.electronics__container}>
+        <h1 className={styles.electronics__title}>
+          Mixed Market | Mobile Phones
+        </h1>
         <div className={styles.electronics__items}>
           {electronics.map((product) => (
             <ProductCard product={product} key={product.productId} />
