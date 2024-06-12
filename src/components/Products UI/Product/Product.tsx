@@ -26,7 +26,7 @@ export const Product: FC<ProductProps> = ({ product }) => {
       <div className={styles.product__container}>
         <div className={styles.productNav__block}>
           <h3 className={styles.account}>
-            <Link className={styles.account__link} href='/computers'>
+            <Link className={styles.account__link} href={product.category}>
               Computers
             </Link>
           </h3>

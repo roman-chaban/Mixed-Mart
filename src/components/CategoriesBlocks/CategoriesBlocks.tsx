@@ -6,6 +6,7 @@ import {
   CoatCheck,
   Gamepad,
   Monitor,
+  Phone,
   PhoneVertical,
 } from 'grommet-icons';
 import Link from 'next/link';
@@ -32,7 +33,7 @@ export const CategoriesBlocks: FC = () => {
       iconColor: 'black',
       href: '/computers',
     },
-    { backgroundColor: '', textColor: '', iconColor: 'black', href: '/' },
+    { backgroundColor: '', textColor: '', iconColor: 'black', href: '/electronics' },
     { backgroundColor: '', textColor: '', iconColor: 'black', href: '/' },
     { backgroundColor: '', textColor: '', iconColor: 'black', href: '/' },
   ]);
@@ -85,7 +86,7 @@ export const CategoriesBlocks: FC = () => {
         >
           {index === 0 && <CoatCheck color={category.iconColor} />}
           {index === 1 && <Monitor color={category.iconColor} />}
-          {index === 2 && <Camera color={category.iconColor} />}
+          {index === 2 && <Phone color={category.iconColor} />}
           {index === 3 && <PhoneVertical color={category.iconColor} />}
           {index === 4 && <Gamepad color={category.iconColor} />}
           <h5
@@ -94,7 +95,7 @@ export const CategoriesBlocks: FC = () => {
           >
             {index === 0 && "Men's Clothings"}
             {index === 1 && 'Computers'}
-            {index === 2 && 'Camera'}
+            {index === 2 && 'Electronics'}
             {index === 3 && 'Headphones'}
             {index === 4 && 'Gaming'}
           </h5>

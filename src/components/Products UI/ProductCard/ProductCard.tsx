@@ -28,12 +28,16 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
           height={220}
           className={styles.productCard__image}
         />
-        <h3 className={styles.productCard__title}>{product.title}</h3>
+        <h3 className={styles.productCard__title}>
+          {product.title.replaceAll('-', ' ')}
+        </h3>
         <div className={styles.productCart__prices}>
           <h4 className={styles.productCard__price}>
-            Price: {product.priceDiscount}₴
+            Price: {product.price} {+product.priceDiscount > 1000 ? '$' : '₴'}
           </h4>
-          <p className={styles.productCard__discount}>{product.price}₴</p>
+          <p className={styles.productCard__discount}>
+            {product.price} {+product.price > 1000 ? '$' : '₴'}
+          </p>
         </div>
         <div className={styles.productCard__rating}>
           Rating:
