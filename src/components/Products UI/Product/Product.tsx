@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
 import { ProductGallery } from '../ProductGallery/ProductGallery';
 import { ProductSlider } from '../ProductsSlider/ProductsSlider';
-import { PhonesSlider } from '../../../../PhonesSlider';
+import { PhonesSlider } from '../../PhonesSlider/PhonesSlider';
 
 interface ProductProps {
   product: UltimateProducts;

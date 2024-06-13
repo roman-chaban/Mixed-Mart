@@ -12,8 +12,8 @@ import { addProductsToWishlist } from '@/store/slices/wishlistSlice';
 
 interface ProductCardProps {
   product: UltimateProducts;
-  onAddWishlistProduct: () => void;
-  onDeleteWishlistProduct: () => void;
+  onAddWishlistProduct?: () => void;
+  onDeleteWishlistProduct?: () => void;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
