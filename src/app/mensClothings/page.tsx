@@ -6,6 +6,7 @@ import mensClothings from '@/api/mensFashion/mensFashion.json';
 import { ProductCard } from '@/components/Clothings UI/ProductCard/ProductCard';
 import styles from './MensClothingsStyles.module.scss';
 import { useChangePageTitle } from '@/hooks/useChangePageTitle';
+import { UltimateProducts } from '@/interfaces/ultimateProducts';
 
 export default function MensClothings() {
   useChangePageTitle("Mixed Mart | Men's Clothings");
@@ -23,7 +24,10 @@ export default function MensClothings() {
         </h1>
         <div className={styles.clothings__products}>
           {clothings.map((clothing) => (
-            <ProductCard key={clothing.productId} product={clothing} />
+            <ProductCard
+              key={clothing.productId}
+              product={clothing as unknown as UltimateProducts}
+            />
           ))}
         </div>
       </div>
