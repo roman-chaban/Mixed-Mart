@@ -7,12 +7,22 @@ import Image from 'next/image';
 import { Star, StarHalf } from 'grommet-icons';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button/Button';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { addProductsToWishlist } from '@/store/slices/wishlistSlice';
 
 interface ProductCardProps {
   product: UltimateProducts;
+  onAddWishlistProduct: () => void;
+  onDeleteWishlistProduct: () => void;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  const dispatch = useAppDispatch();
+
+  const handleAddProductToWishlist = () => {
+    dispatch(addProductsToWishlist(product));
+  };
+
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -20,14 +30,21 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCard__container}>
-        <Image
-          priority
-          src={product.mainImage}
-          alt={`Product Image ${product.title}`}
-          width={200}
-          height={220}
-          className={styles.productCard__image}
-        />
+        <Link
+          className={styles.productCard__link}
+          href={`/${product.category}/${
+            product.name ? product.name.replaceAll(' ', '-') : ''
+          }`}
+        >
+          <Image
+            priority
+            src={product.mainImage}
+            alt={`Product Image ${product.title}`}
+            width={200}
+            height={220}
+            className={styles.productCard__image}
+          />
+        </Link>
         <h3 className={styles.productCard__title}>
           {product.title.replaceAll('-', ' ')}
         </h3>
@@ -52,16 +69,12 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
         <Button
           type='button'
           className={styles.productCard__button}
-          onClick={handleScrollTop}
+          onClick={() => {
+            handleAddProductToWishlist();
+            handleScrollTop();
+          }}
         >
-          <Link
-            className={styles.productCard__link}
-            href={`/${product.category}/${
-              product.name ? product.name.replaceAll(' ', '-') : ''
-            }`}
-          >
-            View product
-          </Link>
+          Add to Wishlist
         </Button>
       </div>
     </div>

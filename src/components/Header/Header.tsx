@@ -11,11 +11,18 @@ import { SearchValue } from '@/types/types';
 import { usePathname } from 'next/navigation';
 import { DropDown } from '../ui/DropDown/DropDown';
 import Image from 'next/image';
+import Link from 'next/link';
+import { WishList } from '@/interfaces/header-links';
+import { useAppSelector } from '@/hooks/useAppSelector';
+import dynamic from 'next/dynamic';
 
-export const Header: FC = () => {
+const Header: FC = () => {
   const pathname = usePathname();
   const [searchValue, setSearchValue] = useState<SearchValue>('');
   const [isDropDownOpen, setIsDropDownOpen] = useState<boolean>(false);
+  const wishlistCounter = useAppSelector(
+    (state) => state.wishlist.wishlistCounter
+  );
 
   const handleDropDownToggle = () => {
     setIsDropDownOpen((prev) => !prev);
@@ -47,8 +54,10 @@ export const Header: FC = () => {
           </label>
           <div className={styles.header__iconsBlock}>
             <div className={styles.favorite__block}>
-              <Favorite className={styles.icon} color='black' />
-              <span className={styles.icon__counter}>0</span>
+              <Link href={WishList.WISHLIST}>
+                <Favorite className={styles.icon} color='black' />
+                <span className={styles.icon__counter}>{wishlistCounter}</span>
+              </Link>
             </div>
             <div className={styles.basket__block}>
               <Basket className={styles.icon} color='black' />
@@ -73,3 +82,5 @@ export const Header: FC = () => {
     </header>
   );
 };
+
+export default dynamic(() => Promise.resolve(Header), { ssr: false });

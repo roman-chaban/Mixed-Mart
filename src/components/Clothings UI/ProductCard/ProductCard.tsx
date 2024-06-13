@@ -5,12 +5,21 @@ import type { FC } from 'react';
 import Image from 'next/image';
 import styles from './ProductCardStyles.module.scss';
 import Link from 'next/link';
+import { useAppDispatch } from '@/hooks/useAppDispatch';
+import { addProductsToWishlist } from '@/store/slices/wishlistSlice';
+import { UltimateProducts } from '@/interfaces/ultimateProducts';
 
 interface ProductCardProps {
-  product: mensFashionItem;
+  product: UltimateProducts;
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  const dispatch = useAppDispatch();
+
+  const handleAddProductToWishlist = () => {
+    dispatch(addProductsToWishlist(product));
+  };
+
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -18,14 +27,19 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCard__container}>
-        <Image
-          priority
-          src={product.mainImage}
-          alt={`Product Image ${product.title}`}
-          width={200}
-          height={220}
-          className={styles.productCard__image}
-        />
+        <Link
+          className={styles.productCard__link}
+          href={`/mensClothings/${product.name.replaceAll(' ', '-')}`}
+        >
+          <Image
+            priority
+            src={product.mainImage}
+            alt={`Product Image ${product.title}`}
+            width={200}
+            height={220}
+            className={styles.productCard__image}
+          />
+        </Link>
         <div className={styles.productCard__info}>
           <h3 className={styles.productCard__title}>{product.title}</h3>
           <div className={styles.productCart__prices}>
@@ -49,14 +63,12 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
           <Button
             type='button'
             className={styles.productCard__button}
-            onClick={handleScrollTop}
+            onClick={() => {
+              handleScrollTop();
+              handleAddProductToWishlist();
+            }}
           >
-            <Link
-              className={styles.productCard__link}
-              href={`/mensClothings/${product.name.replaceAll(' ', '-')}`}
-            >
-              View product
-            </Link>
+            Add to Wishlist
           </Button>
         </div>
       </div>

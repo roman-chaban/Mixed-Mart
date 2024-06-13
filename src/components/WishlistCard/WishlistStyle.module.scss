@@ -1,0 +1,97 @@
+@import '../../assets/colors.scss';
+@import '../../assets/globals.scss';
+@import '../../assets/functions.scss';
+@import '../../assets/mixins.scss';
+
+.wishlist__card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  padding: rem(15px);
+  width: 100%;
+  max-width: 250px;
+  border-radius: rem(20px);
+  background: $primary-input-background;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.wishlist__image {
+  object-fit: contain;
+  margin: 0 auto;
+  padding-top: rem(15px);
+}
+
+.card__discount {
+  font-weight: 500;
+  color: $primary-light-white;
+  padding: 4px 8px;
+  border-radius: rem(10px);
+}
+
+.card__discount_delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__deleteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  padding: rem(5px);
+  background: $primary-gray;
+  border-radius: 100%;
+  transition: background 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  &:hover {
+    background: $primary-dark-red;
+  }
+}
+
+.card__title_prices {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15px);
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: rem(30px);
+}
+
+.card__price,
+.card__title {
+  font-weight: 500;
+  color: $primary-black;
+  line-height: 1.2;
+}
+
+.card__discount {
+  text-decoration: line-through;
+  text-decoration-color: $primary-dark-red;
+}
+
+.card__priceDiscount {
+  color: $primary-dark-red;
+  text-decoration: line-through;
+  font-weight: 500;
+  text-decoration-color: $primary-dark-red;
+}
+
+.view__button {
+  padding: rem(10px);
+  border-radius: rem(5px);
+  background: rgb(6, 181, 6);
+}
+
+.view___link {
+  color: $primary-light-white;
+  font-weight: 500;
+}
