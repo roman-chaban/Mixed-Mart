@@ -3,10 +3,6 @@
 @import '../../assets/functions.scss';
 @import '../../assets/mixins.scss';
 
-.sales {
-  min-height: 100vh;
-}
-
 .sales__container {
   @include mainContainer;
   padding-left: 100px;

@@ -22,3 +22,9 @@
   background: $primary-light-white !important;
   border: 1.5px solid $primary-light-black !important;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

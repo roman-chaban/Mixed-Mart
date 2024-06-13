@@ -1,7 +1,6 @@
 import styles from '@/assets/contact.module.scss';
 import { ContactForm } from '@/components/ContactForm/ContactForm';
 import { ContactInfo } from '@/components/ContactInfo/ContactInfo';
-import { MailOption, Phone } from 'grommet-icons';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
