@@ -19,7 +19,7 @@ import { TitleBlock } from '@/components/ui/TitleBlock/TitleBlock';
 import SliderButtons from '@/components/SliderButtons/SliderButtons';
 
 interface ClothingsSliderProps {
-  title: string;
+  title?: string;
 }
 
 export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
