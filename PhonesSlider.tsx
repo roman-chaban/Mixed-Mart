@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState, type FC } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
+import styles from '@/components/Products UI/ProductsSlider/ProductSliderStyles.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,23 +9,21 @@ import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-flip';
-import { MensFashionProducts } from '@/interfaces/mens-fashion';
-import clothingsProducts from '@/api/mensFashion/mensFashion.json';
+import { UltimateProducts } from '@/interfaces/ultimateProducts';
+import phones from '@/api/phones/phones.json';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { setNextDisabled, setPrevDisabled } from '@/store/slices/sliderSlice';
-import { ProductCard } from '@/components/Clothings UI/ProductCard/ProductCard';
-import styles from './ClothingsSliderStyles.module.scss';
+import { SliderButtons } from '@/components/SliderButtons/SliderButtons';
 import { TitleBlock } from '@/components/ui/TitleBlock/TitleBlock';
-import SliderButtons from '@/components/SliderButtons/SliderButtons';
+import { ProductCard } from '@/components/Products UI/ProductCard/ProductCard';
 
-interface ClothingsSliderProps {
+interface ProductSliderProps {
   title: string;
 }
 
-export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
-  const [clothings, setClothings] =
-    useState<MensFashionProducts>(clothingsProducts);
+export const PhonesSlider: FC<ProductSliderProps> = ({ title }) => {
+  const [products, setProducts] = useState<UltimateProducts[]>(phones);
   const swiperRef = useRef<any>(null);
   const { isNextDisabled, isPrevDisabled } = useAppSelector(
     (state) => state.slider
@@ -32,8 +31,8 @@ export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    setClothings(clothings);
-  }, [clothings]);
+    setProducts(phones);
+  }, []);
 
   const updateNavigationButtons = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -55,7 +54,7 @@ export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={styles.productsSlider}>
@@ -80,13 +79,11 @@ export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
             style={{ cursor: 'grab' }}
             onSlideChange={updateNavigationButtons}
           >
-            <div className={styles.productCards}>
-              {clothings.map((product, index) => (
-                <SwiperSlide key={index} className={styles.slide}>
-                  <ProductCard product={product} />
-                </SwiperSlide>
-              ))}
-            </div>
+            {products.map((product) => (
+              <SwiperSlide key={product.id} className={styles.slide}>
+                <ProductCard product={product} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

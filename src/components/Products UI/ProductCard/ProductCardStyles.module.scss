@@ -24,8 +24,11 @@
 }
 
 .productCard__image {
+  padding-top: rem(15px);
   cursor: pointer;
   margin: 0 auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .productCart__prices {

@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { ProductInfo } from '../ProductInfo/ProductInfo';
 import { ProductGallery } from '../ProductGallery/ProductGallery';
 import { ProductSlider } from '../ProductsSlider/ProductsSlider';
+import { PhonesSlider } from '../../../../PhonesSlider';
 
 interface ProductProps {
   product: UltimateProducts;
@@ -43,7 +44,11 @@ export const Product: FC<ProductProps> = ({ product, categoryTitle }) => {
           />
           <ProductInfo product={product} />
         </div>
-        <ProductSlider title='Related Item' />
+        {product.category === 'computers' ? (
+          <ProductSlider title='Related Item' />
+        ) : (
+          <PhonesSlider title='Phones' />
+        )}
       </div>
     </div>
   );

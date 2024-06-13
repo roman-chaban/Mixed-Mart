@@ -4,6 +4,7 @@ import styles from './ProductStyles.module.scss';
 import Link from 'next/link';
 import { ProductGallery } from '@/components/Products UI/ProductGallery/ProductGallery';
 import { ProductInfo } from '@/components/Products UI/ProductInfo/ProductInfo';
+import { ClothingsSlider } from '@/components/Clothings UI/ClothingsSlider/ClothingsSlider';
 
 interface ProductProps {
   product: mensFashionItem;
@@ -31,13 +32,16 @@ export const Product: FC<ProductProps> = ({ product }) => {
           <h5 className={styles.product__subStyle}>{product.subStyle}</h5>
         </div>
         <div className={styles.product__flex}>
-        <ProductGallery
-          product={product}
-          activeIndex={activeIndex}
-          handleThumbnailProductClick={handleThumbnailProductClick}
-          productImage={productImage}
-        />
-        <ProductInfo product={product} />
+          <div className={styles.product__col}>
+            <ProductGallery
+              product={product}
+              activeIndex={activeIndex}
+              handleThumbnailProductClick={handleThumbnailProductClick}
+              productImage={productImage}
+            />
+            <ProductInfo product={product} />
+          </div>
+          <ClothingsSlider title="Men's Clothings" />
         </div>
       </div>
     </div>

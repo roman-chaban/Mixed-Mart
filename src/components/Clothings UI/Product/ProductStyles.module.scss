@@ -19,7 +19,13 @@
 
 .product__flex {
   display: flex;
-  gap: rem(50px);
+  flex-direction: column;
+  gap: rem(140px);
+}
+
+.product__col {
+  display: flex;
+  justify-content: space-between;
 }
 
 .productNav__block {
@@ -52,3 +58,4 @@
   line-height: 1.5;
   font-weight: 500;
 }
+

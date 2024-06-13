@@ -86,21 +86,21 @@
 .productMainImage {
   object-fit: cover;
   object-position: top;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
   height: auto;
   margin-bottom: -100px;
   border-radius: rem(10px);
 }
 
 .smallImage {
-  width: 120%;
-  height: auto;
+  width: 100%;
   max-width: rem(140px);
   border-radius: rem(5px);
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   cursor: pointer;
-  object-fit: cover;
+  padding: rem(5px);
+  object-fit: contain;
 }
 
 .productInformation__block {
