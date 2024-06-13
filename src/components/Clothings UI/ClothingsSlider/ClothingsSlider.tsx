@@ -17,6 +17,7 @@ import { ProductCard } from '@/components/Clothings UI/ProductCard/ProductCard';
 import styles from './ClothingsSliderStyles.module.scss';
 import { TitleBlock } from '@/components/ui/TitleBlock/TitleBlock';
 import SliderButtons from '@/components/SliderButtons/SliderButtons';
+import { UltimateProducts } from '@/interfaces/ultimateProducts';
 
 interface ClothingsSliderProps {
   title?: string;
@@ -83,7 +84,7 @@ export const ClothingsSlider: FC<ClothingsSliderProps> = ({ title }) => {
             <div className={styles.productCards}>
               {clothings.map((product, index) => (
                 <SwiperSlide key={index} className={styles.slide}>
-                  <ProductCard product={product} />
+                  <ProductCard product={product as unknown as UltimateProducts} />
                 </SwiperSlide>
               ))}
             </div>
