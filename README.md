@@ -1,4 +1,4 @@
-# <strong>Mixed Merchandise Mart </strong>
+# <strong>Mixed Mart </strong>
 
 Mixed Merchandise Mart is a dynamic retail store offering a diverse range of products to meet the needs of all shoppers. From everyday essentials to unique specialty items, our selection includes home goods, electronics, clothing, beauty products, toys, and much more. Located in a convenient and accessible area, Mixed Merchandise Mart provides a one-stop shopping experience with competitive prices and exceptional customer service. Our well-organized aisles and knowledgeable staff make it easy for customers to find exactly what they're looking for. Whether you're stocking up on household necessities or searching for the perfect gift, Mixed Merchandise Mart has something for everyone.
 
