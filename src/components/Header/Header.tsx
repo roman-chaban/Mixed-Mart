@@ -74,6 +74,7 @@ const Header: FC = () => {
               <DropDown
                 isMenuOpen={isDropDownOpen}
                 onToggle={handleDropDownToggle}
+                onClose={handleDropDownToggle}
               />
             </div>
           </div>

@@ -1,16 +1,36 @@
-import { FC } from 'react';
+'use client';
+
+import { FC, useEffect, useRef } from 'react';
 import styles from './DropDownStyles.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
 
 interface DropDownProps {
   isMenuOpen: boolean;
   onToggle: () => void;
+  onClose: () => void;
 }
 
-export const DropDown: FC<DropDownProps> = ({ isMenuOpen, onToggle }) => {
+export const DropDown: FC<DropDownProps> = ({
+  isMenuOpen,
+  onToggle,
+  onClose,
+}) => {
+  const dropDownRef = useRef<HTMLDivElement>(null);
+
+  useOutsideClick({
+    ref: dropDownRef,
+    onClose,
+    isMenuOpen,
+  });
+
   return (
-    <div className={styles.dropDown__container} onClick={onToggle}>
+    <div
+      className={styles.dropDown__container}
+      onClick={onToggle}
+      ref={dropDownRef}
+    >
       <ul
         className={`${styles.dropDown__menu} ${isMenuOpen ? styles.open : ''}`}
       >
