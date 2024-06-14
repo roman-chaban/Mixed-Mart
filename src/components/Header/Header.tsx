@@ -12,14 +12,16 @@ import { usePathname } from 'next/navigation';
 import { DropDown } from '../ui/DropDown/DropDown';
 import Image from 'next/image';
 import Link from 'next/link';
-import { WishList } from '@/interfaces/header-links';
+import { NavIconsLinks } from '@/interfaces/header-links';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import dynamic from 'next/dynamic';
+
+type DropDownType = boolean;
 
 const Header: FC = () => {
   const pathname = usePathname();
   const [searchValue, setSearchValue] = useState<SearchValue>('');
-  const [isDropDownOpen, setIsDropDownOpen] = useState<boolean>(false);
+  const [isDropDownOpen, setIsDropDownOpen] = useState<DropDownType>(false);
   const wishlistCounter = useAppSelector(
     (state) => state.wishlist.wishlistCounter
   );
@@ -54,14 +56,16 @@ const Header: FC = () => {
           </label>
           <div className={styles.header__iconsBlock}>
             <div className={styles.favorite__block}>
-              <Link href={WishList.WISHLIST}>
+              <Link href={NavIconsLinks.WISHLIST}>
                 <Favorite className={styles.icon} color='black' />
                 <span className={styles.icon__counter}>{wishlistCounter}</span>
               </Link>
             </div>
             <div className={styles.basket__block}>
-              <Basket className={styles.icon} color='black' />
-              <span className={styles.icon__counter}>0</span>
+              <Link href={NavIconsLinks.CART}>
+                <Basket className={styles.icon} color='black' />
+                <span className={styles.icon__counter}>0</span>
+              </Link>
             </div>
             <div className={styles.account__block}>
               <Image

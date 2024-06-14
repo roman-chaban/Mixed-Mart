@@ -1,4 +1,4 @@
-export const enum WishList {
+export const enum NavIconsLinks {
   WISHLIST = '/wishlist',
-  BASKET = '/basket',
+  CART = '/cart',
 }
