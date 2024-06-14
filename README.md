@@ -8,3 +8,6 @@ Mixed Merchandise Mart is a dynamic retail store offering a diverse range of pro
 
 
 ![image](https://github.com/roman-chaban/Mixed-Merchandise-Mart/assets/137433410/66e1e4ee-c861-4af0-8ae4-22d43369d29a)
+
+
+![image](https://github.com/roman-chaban/Mixed-Merchandise-Mart/assets/137433410/c68fe741-0285-4c01-b860-9e9fa3be1f46)
