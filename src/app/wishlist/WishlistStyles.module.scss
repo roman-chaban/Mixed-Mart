@@ -13,9 +13,9 @@
 }
 
 .wishlist__nav {
-   display: flex;
-   line-height: 1.3;
-   gap: rem(40px);
+  display: flex;
+  line-height: 1.3;
+  gap: rem(40px);
 }
 
 .wishlist__title {
@@ -24,11 +24,20 @@
   padding-bottom: rem(60px);
 }
 
+.wishlist__emptyTitle {
+  display: flex;
+  align-items: center;
+  gap: rem(25px);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: $primary-seven;
+}
+
 .home__link {
-   font-weight: 500;
-   font-size: $primary-five;
-   color: $primary-gray;
-   text-decoration: underline;
+  font-weight: 500;
+  font-size: $primary-five;
+  color: $primary-gray;
+  text-decoration: underline;
 }
 
 .wishlistProducts {

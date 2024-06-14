@@ -99,3 +99,9 @@
   color: $primary-light-white;
   font-weight: 500;
 }
+
+.wishlist__productRating {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}

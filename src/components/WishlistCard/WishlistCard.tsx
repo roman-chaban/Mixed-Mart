@@ -5,7 +5,7 @@ import type { FC } from 'react';
 import styles from './WishlistStyle.module.scss';
 import Image from 'next/image';
 import { Button } from '../ui/Button/Button';
-import { Close } from 'grommet-icons';
+import { Close, Star } from 'grommet-icons';
 import Link from 'next/link';
 
 interface WishListCardProps {
@@ -80,6 +80,13 @@ export const WishListCard: FC<WishListCardProps> = ({
             {+!product.priceDiscount ? '' : product.price}
             {!product.priceDiscount ? '' : '$'}
           </h5>
+        </div>
+        <div className={styles.wishlist__productRating}>
+          <Star color='plain' />
+          <Star color='plain' />
+          <Star color='plain' />
+          <Star color='plain' />
+          <Star color='plain' />({product.productRating})
         </div>
         <Button type='button' className={styles.view__button}>
           <Link

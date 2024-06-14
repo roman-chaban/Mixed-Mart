@@ -25,6 +25,7 @@ const Header: FC = () => {
   const wishlistCounter = useAppSelector(
     (state) => state.wishlist.wishlistCounter
   );
+  const cartCounter = useAppSelector((state) => state.cart.cartCounter);
 
   const handleDropDownToggle = () => {
     setIsDropDownOpen((prev) => !prev);
@@ -64,7 +65,7 @@ const Header: FC = () => {
             <div className={styles.basket__block}>
               <Link href={NavIconsLinks.CART}>
                 <Basket className={styles.icon} color='black' />
-                <span className={styles.icon__counter}>0</span>
+                <span className={styles.icon__counter}>{cartCounter}</span>
               </Link>
             </div>
             <div className={styles.account__block}>
