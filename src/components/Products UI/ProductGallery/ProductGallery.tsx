@@ -21,7 +21,7 @@ export const ProductGallery: FC<ProductGalleryProps> = ({
   activeIndex,
   handleThumbnailProductClick,
 }) => {
-  const productImages = product.images[0] || [];
+  const productImages = product.images?.[0] || [];
 
   return (
     <div className={styles.product__imagesBlock}>
@@ -48,7 +48,7 @@ export const ProductGallery: FC<ProductGalleryProps> = ({
       {productImage && (
         <Image
           src={productImage}
-          alt={product.title}
+          alt={product.title || 'product image'}
           width={500}
           height={500}
           className={styles.productMainImage}

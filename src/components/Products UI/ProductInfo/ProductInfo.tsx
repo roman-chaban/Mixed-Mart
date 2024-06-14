@@ -48,7 +48,9 @@ export const ProductInfo: FC<ProductInfoProps> = ({ product }) => {
       </div>
       <p className={styles.product__about}>{product.about}</p>
       <div className={styles.product__subStyle}>
-        <span>SubStyle: {product.subStyle}</span>
+        <span>
+          {product.subStyle ? 'SubStyle: ' : ''} {product.subStyle}
+        </span>
         <span>{product.style}</span>
       </div>
       <div className={styles.productToBuy__block}>

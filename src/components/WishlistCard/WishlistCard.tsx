@@ -17,7 +17,32 @@ export const WishListCard: FC<WishListCardProps> = ({
   product,
   onDeleteWishlistProductCard,
 }) => {
-  const percentDiscount = (+product.priceDiscount / +product.price) * 100;
+  const parseDiscount = (discount: string | number): number => {
+    if (typeof discount === 'string') {
+      return parseFloat(discount.replace(/\s+/g, ''));
+    }
+    return discount;
+  };
+
+  const calculatePercentDiscount = (
+    originalPrice: number,
+    discountPrice: number
+  ): string => {
+    return (((originalPrice - discountPrice) / originalPrice) * 100).toFixed(2);
+  };
+
+  const renderPriceDiscount = (product: UltimateProducts): string => {
+    const discount = parseDiscount(product.priceDiscount);
+    const price = parseDiscount(product.price);
+
+    if (discount === 0) {
+      return '';
+    } else if (discount >= 5000) {
+      return `${discount} ₴`;
+    } else {
+      return `${calculatePercentDiscount(price, discount)}%`;
+    }
+  };
 
   return (
     <div className={styles.wishlist__card}>
@@ -28,9 +53,7 @@ export const WishListCard: FC<WishListCardProps> = ({
             background: Number(product.priceDiscount) === 0 ? '' : '#db4444',
           }}
         >
-          {+product.priceDiscount === 0
-            ? ''
-            : `${percentDiscount.toFixed(2)} %`}
+          {renderPriceDiscount(product)}
         </span>
         <Button
           type='button'
@@ -50,9 +73,11 @@ export const WishListCard: FC<WishListCardProps> = ({
       <div className={styles.card__title_prices}>
         <h3 className={styles.card__title}>{product.title}</h3>
         <div className={styles.prices}>
-          <h5 className={styles.card__price}>{product.price}$</h5>
+          <h5 className={styles.card__price}>
+            {!product.priceDiscount ? product.price : product.priceDiscount}$
+          </h5>
           <h5 className={styles.card__priceDiscount}>
-            {+product.priceDiscount === 0 ? '' : product.priceDiscount}
+            {+!product.priceDiscount ? '' : product.price}
             {!product.priceDiscount ? '' : '$'}
           </h5>
         </div>

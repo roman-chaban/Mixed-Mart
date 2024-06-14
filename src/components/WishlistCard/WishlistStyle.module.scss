@@ -73,6 +73,10 @@
   line-height: 1.2;
 }
 
+.card__title {
+  height: 45px;
+}
+
 .card__discount {
   text-decoration: line-through;
   text-decoration-color: $primary-dark-red;

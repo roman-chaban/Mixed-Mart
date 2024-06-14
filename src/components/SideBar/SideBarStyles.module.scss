@@ -31,3 +31,27 @@
 .menu:first-child {
   padding-top: 40px;
 }
+
+.menu__listLink {
+  position: relative;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+.menu__listLink::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-radius: rem(10px);
+  background: $primary-gray;
+  opacity: 0;
+  transition: width 0.5s ease-in-out,
+    opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu__listLink:hover::before {
+  opacity: 1;
+  width: 100%;
+}
