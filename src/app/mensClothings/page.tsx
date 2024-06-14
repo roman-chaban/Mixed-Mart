@@ -7,6 +7,7 @@ import { ProductCard } from '@/components/Clothings UI/ProductCard/ProductCard';
 import styles from './MensClothingsStyles.module.scss';
 import { useChangePageTitle } from '@/hooks/useChangePageTitle';
 import { UltimateProducts } from '@/interfaces/ultimateProducts';
+import { PageNav } from '@/components/PageNav/PageNav';
 
 export default function MensClothings() {
   useChangePageTitle("Mixed Mart | Men's Clothings");
@@ -19,9 +20,12 @@ export default function MensClothings() {
   return (
     <section>
       <div className={styles.clothings__container}>
-        <h1 className={styles.clothings__title}>
-          Mixed Market | Men&apos;s Clothings
-        </h1>
+        <div className={styles.clothings__titles}>
+          <PageNav title="Men's Clothings" />
+          <h1 className={styles.clothings__title}>
+            Mixed Market | Men&apos;s Clothings
+          </h1>
+        </div>
         <div className={styles.clothings__products}>
           {clothings.map((clothing) => (
             <ProductCard

@@ -17,9 +17,19 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.clothings__titles {
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  gap: rem(100px);
+}
+
+
+
 .clothings__title {
   text-align: center;
   font-weight: 600;
   font-size: $secondary;
 }
+
 

@@ -1,0 +1,12 @@
+@import '../../assets/colors.scss';
+
+.home__link {
+   position: relative;
+}
+
+.home__link::after {
+   content: '/';
+   position: absolute;
+   right: -18px;
+   color: $primary-light-black;
+}

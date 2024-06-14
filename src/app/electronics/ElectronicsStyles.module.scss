@@ -15,6 +15,12 @@
   column-gap: rem(40px);
 }
 
+.electronics__titles {
+  display: flex;
+  align-items: flex-end;
+  gap: rem(100px);
+}
+
 .electronics__title {
   padding-top: rem(50px);
   text-align: center;
